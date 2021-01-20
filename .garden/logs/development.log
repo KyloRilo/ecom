@@ -1,0 +1,4 @@
+
+[2021-01-20T00:24:02.371Z] -> Created new project config in project.garden.yml
+
+[2021-01-20T00:24:02.373Z] -> Created default .gardenignore file at .gardenignore. Please edit the .gardenignore file to add files or patterns that Garden should ignore when scanning and building.
