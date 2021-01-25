@@ -2,3 +2,466 @@
 [2021-01-20T00:24:02.371Z] -> Created new project config in project.garden.yml
 
 [2021-01-20T00:24:02.373Z] -> Created default .gardenignore file at .gardenignore. Please edit the .gardenignore file to add files or patterns that Garden should ignore when scanning and building.
+
+[2021-01-25T01:41:34.670Z] Getting status...
+
+[2021-01-25T01:41:35.265Z] Fetching kubectl...
+
+[2021-01-25T01:41:43.769Z] Fetched kubectl
+
+[2021-01-25T01:42:51.856Z] Getting status... → Done
+
+[2021-01-25T01:42:53.557Z]  Processing...
+
+[2021-01-25T01:42:53.855Z] Getting build status for v-c268ce48cc...
+
+[2021-01-25T01:42:53.867Z] Building version v-c268ce48cc...
+
+[2021-01-25T01:42:53.885Z] Getting build status for v-de1512f1d3...
+
+[2021-01-25T01:42:53.920Z] Building version v-de1512f1d3...
+
+[2021-01-25T01:42:53.940Z] Building version v-de1512f1d3... → Done (took 0.1 sec)
+
+[2021-01-25T01:42:53.960Z] Building version v-c268ce48cc... → Done (took 0.1 sec)
+
+[2021-01-25T01:42:53.977Z] Deploying version v-de1512f1d3...
+
+[2021-01-25T01:42:53.989Z] Deploying version v-c268ce48cc...
+
+[2021-01-25T01:42:54.008Z] Deploying version v-de1512f1d3... → Done (took 0 sec)
+
+[2021-01-25T01:42:54.021Z] Deploying version v-c268ce48cc... → Done (took 0 sec)
+
+[2021-01-25T01:42:54.094Z] Getting build status for v-3a4706eb4b...
+
+[2021-01-25T01:42:54.105Z] Building version v-3a4706eb4b...
+
+[2021-01-25T01:42:54.121Z] Building version v-3a4706eb4b... → Done (took 0 sec)
+
+[2021-01-25T01:42:54.137Z] Deploying version v-3a4706eb4b...
+
+[2021-01-25T01:42:54.157Z] Deploying version v-3a4706eb4b... → Done (took 0 sec)
+
+[2021-01-25T01:42:54.183Z] Waiting for code changes...
+
+[2021-01-25T01:44:42.802Z]  Processing...
+
+[2021-01-25T01:44:42.834Z] Waiting for code changes...
+
+[2021-01-25T01:45:18.420Z]  Processing...
+
+[2021-01-25T01:45:18.450Z] Waiting for code changes...
+
+[2021-01-25T01:51:48.893Z] Getting status...
+
+[2021-01-25T01:51:53.746Z] Getting status... → Cached
+
+[2021-01-25T01:51:53.759Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:51:54.641Z]  Processing...
+
+[2021-01-25T01:51:54.659Z] Syncing module sources (1 file)...
+
+[2021-01-25T01:51:55.053Z] Getting build status for v-c268ce48cc...
+
+[2021-01-25T01:51:55.068Z] Building version v-c268ce48cc...
+
+[2021-01-25T01:51:55.076Z] Syncing module sources (1 file)... → Done (took 0.4 sec)
+
+[2021-01-25T01:51:55.089Z] Getting build status for v-b3c6c24903...
+
+[2021-01-25T01:51:55.103Z] Building version v-b3c6c24903...
+
+[2021-01-25T01:51:55.120Z] Building version v-c268ce48cc... → Done (took 0.1 sec)
+
+[2021-01-25T01:51:55.127Z] Building version v-b3c6c24903... → Done (took 0 sec)
+
+[2021-01-25T01:51:55.138Z] Deploying version v-c268ce48cc...
+
+[2021-01-25T01:51:55.150Z] Deploying version v-b3c6c24903...
+
+[2021-01-25T01:51:55.171Z] Deploying version v-b3c6c24903... → Done (took 0 sec)
+
+[2021-01-25T01:51:55.187Z] Getting build status for v-3a4706eb4b...
+
+[2021-01-25T01:51:55.195Z] Building version v-3a4706eb4b...
+
+[2021-01-25T01:51:55.212Z] Building version v-3a4706eb4b... → Done (took 0 sec)
+
+[2021-01-25T01:51:55.225Z] Deploying version v-3a4706eb4b...
+
+[2021-01-25T01:51:55.242Z] Deploying version v-c268ce48cc... → Done (took 0.1 sec)
+
+[2021-01-25T01:51:55.253Z] Deploying version v-3a4706eb4b... → Done (took 0 sec)
+
+[2021-01-25T01:51:55.276Z] Waiting for code changes...
+
+[2021-01-25T01:52:09.227Z]  Processing...
+
+[2021-01-25T01:52:09.257Z] Waiting for code changes...
+
+[2021-01-25T01:52:59.789Z] Getting status...
+
+[2021-01-25T01:53:01.442Z] Getting status... → Cached
+
+[2021-01-25T01:53:01.457Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:53:09.361Z] Module configuration changed, reloading...
+
+[2021-01-25T01:53:09.827Z] Garden dashboard running at http://localhost:9777
+
+[2021-01-25T01:53:09.845Z] Getting status...
+
+[2021-01-25T01:53:12.081Z] Getting status... → Cached
+
+[2021-01-25T01:53:12.094Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:53:19.339Z]  Processing...
+
+[2021-01-25T01:53:19.357Z] Syncing module sources (1 file)...
+
+[2021-01-25T01:53:19.376Z] Syncing module sources (1 file)...
+
+[2021-01-25T01:53:19.674Z] Syncing module sources (1 file)... → Done (took 0.3 sec)
+
+[2021-01-25T01:53:19.688Z] Getting build status for v-d2667389c9...
+
+[2021-01-25T01:53:19.703Z] Building version v-d2667389c9...
+
+[2021-01-25T01:53:19.726Z] Syncing module sources (1 file)... → Done (took 0.4 sec)
+
+[2021-01-25T01:53:19.739Z] Getting build status for v-b3c6c24903...
+
+[2021-01-25T01:53:19.751Z] Building version v-b3c6c24903...
+
+[2021-01-25T01:53:19.772Z] Getting build status for v-3a4706eb4b...
+
+[2021-01-25T01:53:19.784Z] Building version v-3a4706eb4b...
+
+[2021-01-25T01:53:19.798Z] Building version v-d2667389c9... → Done (took 0.1 sec)
+
+[2021-01-25T01:53:19.818Z] Deploying version v-d2667389c9...
+
+[2021-01-25T01:53:19.833Z] Building version v-b3c6c24903... → Done (took 0.1 sec)
+
+[2021-01-25T01:53:19.853Z] Deploying version v-b3c6c24903...
+
+[2021-01-25T01:53:19.865Z] Building version v-3a4706eb4b... → Done (took 0.1 sec)
+
+[2021-01-25T01:53:19.876Z] Deploying version v-3a4706eb4b...
+
+[2021-01-25T01:53:19.903Z] Deploying version v-d2667389c9... → Done (took 0.1 sec)
+
+[2021-01-25T01:53:19.914Z] Deploying version v-b3c6c24903... → Done (took 0.1 sec)
+
+[2021-01-25T01:53:19.933Z] Deploying version v-3a4706eb4b... → Done (took 0 sec)
+
+[2021-01-25T01:53:19.952Z] Waiting for code changes...
+
+[2021-01-25T01:53:28.741Z] Getting status...
+
+[2021-01-25T01:53:30.687Z] Getting status... → Cached
+
+[2021-01-25T01:53:30.705Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:53:37.739Z] Missing include and/or exclude directives on modules with overlapping paths.
+Setting includes/excludes is required when modules have the same path (i.e. are in the same garden.yml file),
+or when one module is nested within another.
+
+Module backend overlaps with module(s) ecom-backend (same path).
+
+Error Details:
+
+overlappingModules: []
+
+
+[2021-01-25T01:54:07.201Z] Getting status...
+
+[2021-01-25T01:54:08.877Z] Getting status... → Cached
+
+[2021-01-25T01:54:08.903Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:54:15.117Z] Module ecom-backend is declared multiple times (in 'ecom-backend/garden.yml' and 'ecom-backend/garden.yml')
+
+Error Details:
+
+pathA: ecom-backend/garden.yml
+pathB: ecom-backend/garden.yml
+
+
+[2021-01-25T01:54:34.329Z] Getting status...
+
+[2021-01-25T01:54:36.116Z] Getting status... → Cached
+
+[2021-01-25T01:54:36.139Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:54:43.689Z] Missing include and/or exclude directives on modules with overlapping paths.
+Setting includes/excludes is required when modules have the same path (i.e. are in the same garden.yml file),
+or when one module is nested within another.
+
+Module ecom-postgres overlaps with module(s) ecom-backend (same path).
+
+Error Details:
+
+overlappingModules: []
+
+
+[2021-01-25T01:54:46.558Z] Getting status...
+
+[2021-01-25T01:54:48.609Z] Getting status... → Cached
+
+[2021-01-25T01:54:48.638Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:54:55.780Z] Failed resolving one or more modules:
+
+ecom-postgres: Error validating Module 'ecom-postgres' (ecom-backend): key "image" is not allowed at path [image]
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-25T01:55:18.151Z] Getting status...
+
+[2021-01-25T01:55:19.980Z] Getting status... → Cached
+
+[2021-01-25T01:55:19.997Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:55:27.302Z] Missing include and/or exclude directives on modules with overlapping paths.
+Setting includes/excludes is required when modules have the same path (i.e. are in the same garden.yml file),
+or when one module is nested within another.
+
+Module ecom-postgres overlaps with module(s) ecom-backend (same path).
+
+Error Details:
+
+overlappingModules: []
+
+
+[2021-01-25T01:56:05.010Z] Getting status...
+
+[2021-01-25T01:56:07.018Z] Getting status... → Cached
+
+[2021-01-25T01:56:07.054Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:56:13.199Z] Could not parse garden.yml in directory /home/kriley/code/ecom/ecom-backend/garden.yml as valid YAML: name of an alias node must contain at least one character at line 18, column 4:
+      *
+       ^
+
+[2021-01-25T01:56:36.859Z] Getting status...
+
+[2021-01-25T01:56:39.033Z] Getting status... → Cached
+
+[2021-01-25T01:56:39.049Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T01:56:45.331Z] Could not parse garden.yml in directory /home/kriley/code/ecom/ecom-backend/garden.yml as valid YAML: name of an alias node must contain at least one character at line 18, column 6:
+      - *
+         ^
+
+[2021-01-25T02:07:48.836Z] Could not parse garden.yml in directory /home/kriley/code/ecom/ecom-backend/garden.yml as valid YAML: name of an alias node must contain at least one character at line 18, column 6:
+      - *
+         ^
+
+[2021-01-25T02:07:48.849Z] 
+See error.log for detailed error message
+
+[2021-01-25T02:08:16.688Z] Getting status...
+
+[2021-01-25T02:08:20.844Z] Getting status... → Cached
+
+[2021-01-25T02:08:20.857Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-25T02:08:21.679Z]  Processing...
+
+[2021-01-25T02:08:21.691Z] Syncing module sources (1 file)...
+
+[2021-01-25T02:08:21.710Z] Syncing module sources (1 file)...
+
+[2021-01-25T02:08:21.732Z] Syncing module sources (5 files)...
+
+[2021-01-25T02:08:22.096Z] Syncing module sources (5 files)... → Done (took 0.4 sec)
+
+[2021-01-25T02:08:22.107Z] Getting build status for v-89060762d4...
+
+[2021-01-25T02:08:22.126Z] Fetching docker...
+
+[2021-01-25T02:08:22.141Z] Syncing module sources (1 file)... → Done (took 0.4 sec)
+
+[2021-01-25T02:08:22.150Z] Getting build status for v-b3c6c24903...
+
+[2021-01-25T02:08:22.160Z] Building version v-b3c6c24903...
+
+[2021-01-25T02:08:22.168Z] Syncing module sources (1 file)... → Done (took 0.5 sec)
+
+[2021-01-25T02:08:22.181Z] Getting build status for v-d2667389c9...
+
+[2021-01-25T02:08:22.190Z] Building version v-d2667389c9...
+
+[2021-01-25T02:08:22.207Z] Building version v-b3c6c24903... → Done (took 0.1 sec)
+
+[2021-01-25T02:08:22.217Z] Building version v-d2667389c9... → Done (took 0 sec)
+
+[2021-01-25T02:08:22.228Z] Deploying version v-b3c6c24903...
+
+[2021-01-25T02:08:22.235Z] Deploying version v-d2667389c9...
+
+[2021-01-25T02:08:22.263Z] Getting build status for v-3a4706eb4b...
+
+[2021-01-25T02:08:22.275Z] Building version v-3a4706eb4b...
+
+[2021-01-25T02:08:22.298Z] Building version v-3a4706eb4b... → Done (took 0 sec)
+
+[2021-01-25T02:08:22.311Z] Deploying version v-3a4706eb4b...
+
+[2021-01-25T02:08:22.328Z] Deploying version v-d2667389c9... → Done (took 0.1 sec)
+
+[2021-01-25T02:08:22.356Z] Deploying version v-3a4706eb4b... → Done (took 0 sec)
+
+[2021-01-25T02:08:22.373Z] Deploying version v-b3c6c24903... → Done (took 0.1 sec)
+
+[2021-01-25T02:08:35.439Z] Fetched docker
+
+[2021-01-25T02:08:35.515Z] Building version v-89060762d4...
+
+[2021-01-25T02:08:35.681Z] Building postgres:v-89060762d4...
+
+[2021-01-25T02:09:58.317Z] Building postgres:v-89060762d4...
+
+[2021-01-25T02:09:58.357Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-89060762d4 --build-arg GARDEN_MODULE_VERSION=v-89060762d4 /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon   7.68kB
+Step 1/10 : FROM golang:1.15.2-alpine as build_base
+1.15.2-alpine: Pulling from library/golang
+df20fa9351a1: Pulling fs layer
+ed8968b2872e: Pulling fs layer
+a92cc7c5fd73: Pulling fs layer
+e871e8e8d7a9: Pulling fs layer
+e73272ec9a57: Pulling fs layer
+e73272ec9a57: Waiting
+a92cc7c5fd73: Verifying Checksum
+a92cc7c5fd73: Download complete
+ed8968b2872e: Download complete
+df20fa9351a1: Verifying Checksum
+df20fa9351a1: Download complete
+e73272ec9a57: Verifying Checksum
+e73272ec9a57: Download complete
+df20fa9351a1: Pull complete
+ed8968b2872e: Pull complete
+a92cc7c5fd73: Pull complete
+e871e8e8d7a9: Verifying Checksum
+e871e8e8d7a9: Download complete
+e871e8e8d7a9: Pull complete
+e73272ec9a57: Pull complete
+Digest: sha256:4d8abd16b03209b30b48f69a2e10347aacf7ce65d8f9f685e8c3e20a512234d9
+Status: Downloaded newer image for golang:1.15.2-alpine
+ ---> b3bc898ad092
+Step 2/10 : RUN apk add --no-cache git build-base
+ ---> Running in c98392da2424
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
+(1/26) Upgrading musl (1.1.24-r9 -> 1.1.24-r10)
+(2/26) Installing libgcc (9.3.0-r2)
+(3/26) Installing libstdc++ (9.3.0-r2)
+(4/26) Installing binutils (2.34-r1)
+(5/26) Installing libmagic (5.38-r0)
+(6/26) Installing file (5.38-r0)
+(7/26) Installing gmp (6.2.0-r0)
+(8/26) Installing isl (0.18-r0)
+(9/26) Installing libgomp (9.3.0-r2)
+(10/26) Installing libatomic (9.3.0-r2)
+(11/26) Installing libgphobos (9.3.0-r2)
+(12/26) Installing mpfr4 (4.0.2-r4)
+(13/26) Installing mpc1 (1.1.0-r1)
+(14/26) Installing gcc (9.3.0-r2)
+(15/26) Installing musl-dev (1.1.24-r10)
+(16/26) Installing libc-dev (0.7.2-r3)
+(17/26) Installing g++ (9.3.0-r2)
+(18/26) Installing make (4.3-r0)
+(19/26) Installing fortify-headers (1.1-r0)
+(20/26) Installing patch (2.7.6-r6)
+(21/26) Installing build-base (0.5-r2)
+(22/26) Installing nghttp2-libs (1.41.0-r0)
+(23/26) Installing libcurl (7.69.1-r3)
+(24/26) Installing expat (2.2.9-r1)
+(25/26) Installing pcre2 (10.35-r0)
+(26/26) Installing git (2.26.2-r0)
+Executing busybox-1.31.1-r16.trigger
+OK: 222 MiB in 40 packages
+Removing intermediate container c98392da2424
+ ---> adb2753c109e
+Step 3/10 : WORKDIR /go/src/app/
+ ---> Running in 3787ed302cc1
+Removing intermediate container 3787ed302cc1
+ ---> eeab7eff4b02
+Step 4/10 : COPY go.mod .
+ ---> b930cb4cb9be
+Step 5/10 : COPY go.sum .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+
+
+[2021-01-25T02:09:58.402Z] Waiting for code changes...
+
+[2021-01-25T02:13:36.006Z]  Processing...
+
+[2021-01-25T02:13:36.026Z] Syncing module sources (1 file)...
+
+[2021-01-25T02:13:36.059Z] Syncing module sources (5 files)...
+
+[2021-01-25T02:13:36.188Z] Syncing module sources (5 files)... → Done (took 0.1 sec)
+
+[2021-01-25T02:13:36.211Z] Building version v-9bc17cfc7e...
+
+[2021-01-25T02:13:36.235Z] Syncing module sources (1 file)... → Done (took 0.2 sec)
+
+[2021-01-25T02:13:36.252Z] Building version v-85e2663b39...
+
+[2021-01-25T02:13:36.351Z] Building version v-85e2663b39... → Done (took 0.1 sec)
+
+[2021-01-25T02:13:36.372Z] Deploying version v-85e2663b39...
+
+[2021-01-25T02:13:36.394Z] Building postgres:v-9bc17cfc7e...
+
+[2021-01-25T02:13:36.453Z] Deploying version v-85e2663b39... → Done (took 0.1 sec)
+
+[2021-01-25T02:13:36.541Z] Building postgres:v-9bc17cfc7e...
+
+[2021-01-25T02:13:36.561Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-9bc17cfc7e --build-arg GARDEN_MODULE_VERSION=v-9bc17cfc7e /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon  8.192kB
+Step 1/18 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/18 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/18 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/18 : COPY go.mod .
+ ---> Using cache
+ ---> b930cb4cb9be
+Step 5/18 : COPY go.sum .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+
+
+[2021-01-25T02:13:36.577Z] Waiting for code changes...
