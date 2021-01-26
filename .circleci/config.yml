@@ -1,0 +1,17 @@
+version: 2.0
+jobs:
+  preview:
+    docker:
+      - image: gardendev/garden-gcloud:v0.10.0-1
+    environment:
+      GARDEN_LOG_LEVEL: debug     # set the log level to your preference here
+      GARDEN_LOGGER_TYPE: basic   # this is important, since the default logger doesn't play nice with CI :)
+    steps:
+      - checkout
+      - configure_kubectl_context
+      - run:
+          name: Test project
+          command: garden test --logger-type=basic --env=preview
+      - run:
+          name: Deploy project
+          command: garden deploy --logger-type=basic --env=preview
