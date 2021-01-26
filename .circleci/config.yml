@@ -69,6 +69,6 @@ workflows:
       - staging:
           filters:
             branches:
-              only: master
+              only: main
             tags:
               ignore: /.*/
