@@ -9,6 +9,27 @@ environments:
   - name: local
     variables:
       baseHostName: ecom.local.app.garden
+  - name: qa
+    providers:
+      - name: kubernetes
+        context: qa-cluster
+        defaultHostname: ecom-${local.env.CIRCLE_BRANCH || "default"}.qa.app.garden
+        namespace: ecom-${local.env.CIRCLE_BRANCH || "default"}
+        buildMode: cluster-docker
+
+  - name: stage
+    providers:
+      - name: kubernetes
+        context: stage-cluster
+        namespace: ecom
+        defaultHostname: ecom.stage.app.garden
+        forceSsl: true
+        tlsCertificates:
+        - name: stage-tls
+          secretRef:
+            name: stage-tls
+            namespace: default
+        buildMode: cluster-docker
 providers:
   - name: local-kubernetes
     environments: [local]
