@@ -25,7 +25,7 @@ func health(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	klog.InitFlags(nil)
-	flag.Set("log_file", "enkey-listings-api.log")
+	flag.Set("log_file", "ecom-api.log")
 	flag.Parse()
 
 	klog.Infof("creating graphql handler")
