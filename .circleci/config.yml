@@ -41,34 +41,34 @@ commands:
 # Jobs section
 #
 jobs:
-  preview:
+  qa:
     <<: *image-config
     steps:
       - checkout
       - configure_kubectl_context
       - run:
           name: Test project
-          command: GARDEN_LOGGER_TYPE=basic garden test --env=preview
+          command: GARDEN_LOGGER_TYPE=basic garden test --env=qa
       - run:
           name: Deploy project
-          command: GARDEN_LOGGER_TYPE=basic garden deploy --env=preview
-  staging:
+          command: GARDEN_LOGGER_TYPE=basic garden deploy --env=qa
+  stage:
     <<: *image-config
     steps:
       - checkout
       - configure_kubectl_context
       - run:
           name: Test project
-          command: garden test --logger-type=basic --env=staging
+          command: garden test --logger-type=basic --env=stage
       - run:
           name: Deploy project
-          command: garden deploy --logger-type=basic --env=staging
+          command: garden deploy --logger-type=basic --env=stage
 
 workflows:
   version: 2
   commit:
     jobs:
-      - preview
+      - qa
   master:
     jobs:
       - staging:
