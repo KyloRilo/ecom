@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  build:
+  build-api:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -17,15 +17,12 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.15
-
-    - name: Build API
-      run: go build -v ./ecom-api/.
+    
+    - name: Init mod
+      run: cd ./ecom-api/ && go mod download
       
-    - name: Build Backend
-      run: go build -v ./ecom-backend/.
+    - name: Build API
+      run: go build -v .
 
     - name: Test API
-      run: go test -v ./ecom-api/.
-    
-    - name: Test Backend
-      run: go build -v ./ecom-backend/.
+      run: go test -v .
