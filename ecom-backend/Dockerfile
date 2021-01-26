@@ -5,9 +5,7 @@ RUN apk add --no-cache git build-base
 WORKDIR /go/src/app/
 
 COPY go.mod .
-COPY go.sum .
-
-COPY common-lib-image ../common-lib
+#COPY go.sum .
 
 RUN go mod download
 
@@ -26,7 +24,7 @@ COPY --from=build_base /go/src/app/out/ecom-backend /app/ecom-backend
 
 EXPOSE 8080
 
-RUN chown enkey_user:enkey_group /app/identity-api
+RUN chown ecom_admin:ecom_group /app/ecom-backend
 
 USER ecom_admin
 

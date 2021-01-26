@@ -1,0 +1,10 @@
+
+[2021-01-20T00:26:51.889Z] -> Created new module config in garden.yml
+
+[2021-01-20T00:26:51.907Z] We recommend reviewing the generated config, uncommenting fields that you'd like to configure, and cleaning up any
+commented fields that you don't need to use.
+
+For more information about kubernetes modules, please check out
+https://docs.garden.io/reference/module-types/kubernetes, and the kubernetes provider docs at
+https://docs.garden.io/reference/providers/kubernetes. For general information about Garden configuration files, take a
+look at https://docs.garden.io/using-garden/configuration-overview.

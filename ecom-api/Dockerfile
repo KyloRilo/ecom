@@ -1,4 +1,3 @@
-
 FROM golang:1.14.2-alpine as build_base
 
 RUN apk add --no-cache git build-base
@@ -18,6 +17,7 @@ RUN go build -o ./out/ecom-api .
 
 # Runtime container
 FROM alpine:3.12
+RUN apk add ca-certificates postgresql-client
 
 RUN addgroup -g 1000 ecom_group
 

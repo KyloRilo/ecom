@@ -1,18 +1,12 @@
 kind: Module
 
 # The type of this module.
-type: kubernetes
+type: container
 
 # The name of this module.
 name: ecom-backend
-include:
-  - Dockerfile
-
----
-kind: Module
-name: ecom-postgres
-description: Postgres DB container
-type: container
-image: postgres:11.7-alpine
-exclude:
-  - .
+dockerfile: Dockerfile
+services:
+  - name: ecom-backend
+    dependencies:
+      - db

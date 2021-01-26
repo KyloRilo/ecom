@@ -1,110 +1,126 @@
 
-[2021-01-25T02:09:58.356Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-89060762d4 --build-arg GARDEN_MODULE_VERSION=v-89060762d4 /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+[2021-01-26T03:32:56.402Z] Error deploying db: ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out progressing.
 
-COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+━━━ Events ━━━
+Deployment db: ScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1
+Pod db-84f8b4cdc5-cggc5: Scheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube
+Pod db-84f8b4cdc5-cggc5: Pulled - Container image "postgres:12-alpine" already present on machine
+Pod db-84f8b4cdc5-cggc5: Created - Created container db
+Pod db-84f8b4cdc5-cggc5: Started - Started container db
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
 
-Here's the full output:
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up
 
-Sending build context to Docker daemon   7.68kB
-Step 1/10 : FROM golang:1.15.2-alpine as build_base
-1.15.2-alpine: Pulling from library/golang
-df20fa9351a1: Pulling fs layer
-ed8968b2872e: Pulling fs layer
-a92cc7c5fd73: Pulling fs layer
-e871e8e8d7a9: Pulling fs layer
-e73272ec9a57: Pulling fs layer
-e73272ec9a57: Waiting
-a92cc7c5fd73: Verifying Checksum
-a92cc7c5fd73: Download complete
-ed8968b2872e: Download complete
-df20fa9351a1: Verifying Checksum
-df20fa9351a1: Download complete
-e73272ec9a57: Verifying Checksum
-e73272ec9a57: Download complete
-df20fa9351a1: Pull complete
-ed8968b2872e: Pull complete
-a92cc7c5fd73: Pull complete
-e871e8e8d7a9: Verifying Checksum
-e871e8e8d7a9: Download complete
-e871e8e8d7a9: Pull complete
-e73272ec9a57: Pull complete
-Digest: sha256:4d8abd16b03209b30b48f69a2e10347aacf7ce65d8f9f685e8c3e20a512234d9
-Status: Downloaded newer image for golang:1.15.2-alpine
- ---> b3bc898ad092
-Step 2/10 : RUN apk add --no-cache git build-base
- ---> Running in c98392da2424
-fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/APKINDEX.tar.gz
-fetch http://dl-cdn.alpinelinux.org/alpine/v3.12/community/x86_64/APKINDEX.tar.gz
-(1/26) Upgrading musl (1.1.24-r9 -> 1.1.24-r10)
-(2/26) Installing libgcc (9.3.0-r2)
-(3/26) Installing libstdc++ (9.3.0-r2)
-(4/26) Installing binutils (2.34-r1)
-(5/26) Installing libmagic (5.38-r0)
-(6/26) Installing file (5.38-r0)
-(7/26) Installing gmp (6.2.0-r0)
-(8/26) Installing isl (0.18-r0)
-(9/26) Installing libgomp (9.3.0-r2)
-(10/26) Installing libatomic (9.3.0-r2)
-(11/26) Installing libgphobos (9.3.0-r2)
-(12/26) Installing mpfr4 (4.0.2-r4)
-(13/26) Installing mpc1 (1.1.0-r1)
-(14/26) Installing gcc (9.3.0-r2)
-(15/26) Installing musl-dev (1.1.24-r10)
-(16/26) Installing libc-dev (0.7.2-r3)
-(17/26) Installing g++ (9.3.0-r2)
-(18/26) Installing make (4.3-r0)
-(19/26) Installing fortify-headers (1.1-r0)
-(20/26) Installing patch (2.7.6-r6)
-(21/26) Installing build-base (0.5-r2)
-(22/26) Installing nghttp2-libs (1.41.0-r0)
-(23/26) Installing libcurl (7.69.1-r3)
-(24/26) Installing expat (2.2.9-r1)
-(25/26) Installing pcre2 (10.35-r0)
-(26/26) Installing git (2.26.2-r0)
-Executing busybox-1.31.1-r16.trigger
-OK: 222 MiB in 40 packages
-Removing intermediate container c98392da2424
- ---> adb2753c109e
-Step 3/10 : WORKDIR /go/src/app/
- ---> Running in 3787ed302cc1
-Removing intermediate container 3787ed302cc1
- ---> eeab7eff4b02
-Step 4/10 : COPY go.mod .
- ---> b930cb4cb9be
-Step 5/10 : COPY go.sum .
-COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  role "ecomuser" does not exist
+
+Pod db-84f8b4cdc5-cggc5: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/db
+
+****** db-84f8b4cdc5-cggc5 ******
+------ db ------2021-01-26 03:32:48.985 UTC [35] LOG:  database system is ready to accept connections
+ done
+server started
+
+/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+
+waiting for server to shut down....2021-01-26 03:32:49.021 UTC [35] LOG:  received fast shutdown request
+2021-01-26 03:32:49.041 UTC [35] LOG:  aborting any active transactions
+2021-01-26 03:32:49.041 UTC [35] LOG:  background worker "logical replication launcher" (PID 42) exited with exit code 1
+2021-01-26 03:32:49.042 UTC [37] LOG:  shutting down
+2021-01-26 03:32:49.190 UTC [35] LOG:  database system is shut down
+ done
+server stopped
+
+PostgreSQL init process complete; ready for start up.
+
+2021-01-26 03:32:49.255 UTC [1] LOG:  starting PostgreSQL 12.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.2.1_pre1) 10.2.1 20201203, 64-bit
+2021-01-26 03:32:49.255 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-01-26 03:32:49.255 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2021-01-26 03:32:49.300 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2021-01-26 03:32:49.380 UTC [53] LOG:  database system was shut down at 2021-01-26 03:32:49 UTC
+2021-01-26 03:32:49.399 UTC [54] FATAL:  the database system is starting up
+2021-01-26 03:32:49.427 UTC [1] LOG:  database system is ready to accept connections
+2021-01-26 03:32:50.324 UTC [68] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:51.313 UTC [75] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:52.307 UTC [82] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:53.304 UTC [89] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:54.305 UTC [96] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:55.310 UTC [104] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:56.306 UTC [111] FATAL:  role "ecomuser" does not exist
+
 
 Error Details:
 
-
-args: []
-cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
-
-
-[2021-01-25T02:13:36.560Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-9bc17cfc7e --build-arg GARDEN_MODULE_VERSION=v-9bc17cfc7e /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
-
-COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
-
-Here's the full output:
-
-Sending build context to Docker daemon  8.192kB
-Step 1/18 : FROM golang:1.15.2-alpine as build_base
- ---> b3bc898ad092
-Step 2/18 : RUN apk add --no-cache git build-base
- ---> Using cache
- ---> adb2753c109e
-Step 3/18 : WORKDIR /go/src/app/
- ---> Using cache
- ---> eeab7eff4b02
-Step 4/18 : COPY go.mod .
- ---> Using cache
- ---> b930cb4cb9be
-Step 5/18 : COPY go.sum .
-COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
-
-Error Details:
-
-
-args: []
-cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+serviceName: db
+status:
+  state: unhealthy
+  lastMessage: >-
+    ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out
+    progressing.
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment db:\e[39m \e[37mScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mScheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mPulled - Container image \"postgres:12-alpine\" already present on machine\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mCreated - Created container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mStarted - Started container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory\e[39m\n\e[33m\tIs the server running locally and accepting\e[39m\n\e[33m\tconnections on Unix domain socket \"/var/run/postgresql/.s.PGSQL.5432\"?\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly\e[39m\n\e[33m\tThis probably means the server terminated abnormally\e[39m\n\e[33m\tbefore or while processing the request.\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  role \"ecomuser\" does not exist\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/db\e[39m\n\e[94m\e[39m\n\e[94m****** db-84f8b4cdc5-cggc5 ******\e[39m\n\e[94m\e[39m\e[90m------ db ------\e[39m2021-01-26 03:32:48.985 UTC [35] LOG:  database system is ready to accept connections\n done\nserver started\n\n/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*\n\nwaiting for server to shut down....2021-01-26 03:32:49.021 UTC [35] LOG:  received fast shutdown request\n2021-01-26 03:32:49.041 UTC [35] LOG:  aborting any active transactions\n2021-01-26 03:32:49.041 UTC [35] LOG:  background worker \"logical replication launcher\" (PID 42) exited with exit code 1\n2021-01-26 03:32:49.042 UTC [37] LOG:  shutting down\n2021-01-26 03:32:49.190 UTC [35] LOG:  database system is shut down\n done\nserver stopped\n\nPostgreSQL init process complete; ready for start up.\n\n2021-01-26 03:32:49.255 UTC [1] LOG:  starting PostgreSQL 12.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.2.1_pre1) 10.2.1 20201203, 64-bit\n2021-01-26 03:32:49.255 UTC [1] LOG:  listening on IPv4 address \"0.0.0.0\", port 5432\n2021-01-26 03:32:49.255 UTC [1] LOG:  listening on IPv6 address \"::\", port 5432\n2021-01-26 03:32:49.300 UTC [1] LOG:  listening on Unix socket \"/var/run/postgresql/.s.PGSQL.5432\"\n2021-01-26 03:32:49.380 UTC [53] LOG:  database system was shut down at 2021-01-26 03:32:49 UTC\n2021-01-26 03:32:49.399 UTC [54] FATAL:  the database system is starting up\n2021-01-26 03:32:49.427 UTC [1] LOG:  database system is ready to accept connections\n2021-01-26 03:32:50.324 UTC [68] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:51.313 UTC [75] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:52.307 UTC [82] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:53.304 UTC [89] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:54.305 UTC [96] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:55.310 UTC [104] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:56.306 UTC [111] FATAL:  role \"ecomuser\" does not exist\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: db
+      namespace: ecom-default
+      uid: afa2efda-ffde-419a-9b15-3f26e90fa0fa
+      resourceVersion: '8394'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:55Z'
+      labels:
+        module: postgres
+        service: db
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03
+        garden.io/version: v-0acb088676
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03","garden.io/version":"v-0acb088676"},"labels":{"module":"postgres","service":"db"},"name":"db","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"db"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"postgres","service":"db"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-0acb088676"},{"name":"GARDEN_MODULE_VERSION","value":"v-0acb088676"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"postgres\",\"name\":\"postgres\",\"type\":\"build\",\"version\":\"v-0acb088676\"}]"},{"name":"POSTGRES_DATABASE","value":"ecom"},{"name":"POSTGRES_USERNAME","value":"ecomuser"},{"name":"POSTGRES_PASSWORD","value":"ecompass"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"postgres:12-alpine","imagePullPolicy":"IfNotPresent","livenessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":3,"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"db","ports":[{"containerPort":5432,"name":"db","protocol":"TCP"}],"readinessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":90,"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false},"volumeMounts":[{"mountPath":"/db-data","name":"data"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5,"volumes":[{"emptyDir":{},"name":"data"}]}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: db
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: postgres
+            service: db
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
 

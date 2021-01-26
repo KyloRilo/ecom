@@ -170,3 +170,2401 @@ Error Details:
 args: []
 cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
 
+
+[2021-01-25T03:14:08.593Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-9bc17cfc7e --build-arg GARDEN_MODULE_VERSION=v-9bc17cfc7e /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon  8.192kB
+Step 1/18 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/18 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/18 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/18 : COPY go.mod .
+ ---> Using cache
+ ---> b930cb4cb9be
+Step 5/18 : COPY go.sum .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+
+
+[2021-01-25T21:28:46.599Z] Command "minikube ip" failed with code 89:
+
+Here's the full output:
+
+* The control plane node must be running for this command
+  - To start a cluster, run: "minikube start"
+
+Error Details:
+
+shortMessage: 'Command failed with exit code 89: minikube ip'
+command: minikube ip
+exitCode: 89
+stdout: |-
+  * The control plane node must be running for this command
+    - To start a cluster, run: "minikube start"
+stderr: ''
+all: |-
+  * The control plane node must be running for this command
+    - To start a cluster, run: "minikube start"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-01-25T21:28:46.640Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-01-25T21:28:43.560Z
+    batchId: ccb5732d-4add-42a8-be66-be5f522f088b
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /home/kriley/code/ecom
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-25T21:28:43.542Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-01-25T21:28:43.561Z
+    batchId: aaf079d5-5b9d-4f87-8c94-8c28ff698c09
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /home/kriley/code/ecom
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-25T21:28:43.544Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-01-25T21:28:43.562Z
+    completedAt: 2021-01-25T21:28:46.550Z
+    batchId: aaf079d5-5b9d-4f87-8c94-8c28ff698c09
+    version: 0.12.12
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-01-25T21:28:43.561Z
+    batchId: 730cc580-ab2d-4860-94c9-94acbef9fbf4
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /home/kriley/code/ecom
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-25T21:28:43.545Z
+messages: []
+
+
+[2021-01-25T21:31:33.194Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-9bc17cfc7e --build-arg GARDEN_MODULE_VERSION=v-9bc17cfc7e /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon  8.192kB
+Step 1/18 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/18 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/18 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/18 : COPY go.mod .
+ ---> Using cache
+ ---> b930cb4cb9be
+Step 5/18 : COPY go.sum .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.sum: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+
+
+[2021-01-25T21:32:24.660Z] Error validating deployService kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: ready
+  version: v-6ba4c6871b
+  detail:
+    remoteResources: []
+context: deployService kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:32:24.763Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: ready
+  version: v-6ba4c6871b
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:33:49.750Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: ready
+  version: v-4d53617a79
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:33:49.851Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-7370508a53 --build-arg GARDEN_MODULE_VERSION=v-7370508a53 /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat common-lib-image: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon  8.192kB
+Step 1/17 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/17 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/17 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/17 : COPY go.mod .
+ ---> Using cache
+ ---> b930cb4cb9be
+Step 5/17 : COPY common-lib-image ../common-lib
+COPY failed: file not found in build context or excluded by .dockerignore: stat common-lib-image: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+
+
+[2021-01-25T21:35:55.586Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: ready
+  version: v-4d53617a79
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:36:29.988Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: ready
+  version: v-4d53617a79
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:37:01.656Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: outdated
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:37:04.157Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-0ba88f7c33 --build-arg GARDEN_MODULE_VERSION=v-0ba88f7c33 /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+
+The command '/bin/sh -c chown enkey_user:enkey_group /app/identity-api' returned a non-zero code: 1
+
+Here's the full output:
+
+Sending build context to Docker daemon  8.192kB
+Step 1/16 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/16 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/16 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/16 : COPY go.mod .
+ ---> Using cache
+ ---> b930cb4cb9be
+Step 5/16 : RUN go mod download
+ ---> Using cache
+ ---> 7a2427c052e9
+Step 6/16 : COPY . .
+ ---> Using cache
+ ---> 4d0076bf1ba3
+Step 7/16 : RUN go build -o ./out/ecom-backend .
+ ---> Using cache
+ ---> a0c1c79149de
+Step 8/16 : FROM alpine:3.12
+ ---> 389fef711851
+Step 9/16 : RUN apk add ca-certificates postgresql-client
+ ---> Using cache
+ ---> 35bd72a9f764
+Step 10/16 : RUN addgroup -g 1000 ecom_group
+ ---> Using cache
+ ---> 6aac3f991f40
+Step 11/16 : RUN adduser -D -s /bin/sh -u 1000 -G ecom_group ecom_admin
+ ---> Using cache
+ ---> 65ef9f9caa44
+Step 12/16 : COPY --from=build_base /go/src/app/out/ecom-backend /app/ecom-backend
+ ---> Using cache
+ ---> 83b5f306d3e9
+Step 13/16 : EXPOSE 8080
+ ---> Using cache
+ ---> f3c13ac4c9e0
+Step 14/16 : RUN chown enkey_user:enkey_group /app/identity-api
+ ---> Running in a443e0d6f5a4
+chown: unknown user/group enkey_user:enkey_group
+The command '/bin/sh -c chown enkey_user:enkey_group /app/identity-api' returned a non-zero code: 1
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+
+
+[2021-01-25T21:39:25.202Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-1af6d5b675 --build-arg GARDEN_MODULE_VERSION=v-1af6d5b675 /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+
+The command '/bin/sh -c chown enkey_user:ecom_group /app/ecom-backend' returned a non-zero code: 1
+
+Here's the full output:
+
+Sending build context to Docker daemon  8.192kB
+Step 1/16 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/16 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/16 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/16 : COPY go.mod .
+ ---> Using cache
+ ---> b930cb4cb9be
+Step 5/16 : RUN go mod download
+ ---> Using cache
+ ---> 7a2427c052e9
+Step 6/16 : COPY . .
+ ---> 99fb1d76bf79
+Step 7/16 : RUN go build -o ./out/ecom-backend .
+ ---> Running in 2e43e7718de0
+Removing intermediate container 2e43e7718de0
+ ---> f68cde09fe41
+Step 8/16 : FROM alpine:3.12
+ ---> 389fef711851
+Step 9/16 : RUN apk add ca-certificates postgresql-client
+ ---> Using cache
+ ---> 35bd72a9f764
+Step 10/16 : RUN addgroup -g 1000 ecom_group
+ ---> Using cache
+ ---> 6aac3f991f40
+Step 11/16 : RUN adduser -D -s /bin/sh -u 1000 -G ecom_group ecom_admin
+ ---> Using cache
+ ---> 65ef9f9caa44
+Step 12/16 : COPY --from=build_base /go/src/app/out/ecom-backend /app/ecom-backend
+ ---> Using cache
+ ---> 83b5f306d3e9
+Step 13/16 : EXPOSE 8080
+ ---> Using cache
+ ---> f3c13ac4c9e0
+Step 14/16 : RUN chown enkey_user:ecom_group /app/ecom-backend
+ ---> Running in 57ca34baf7b2
+chown: unknown user/group enkey_user:ecom_group
+The command '/bin/sh -c chown enkey_user:ecom_group /app/ecom-backend' returned a non-zero code: 1
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+
+
+[2021-01-25T21:40:04.215Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: outdated
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:41:50.383Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: outdated
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:43:01.950Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: outdated
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:46:49.344Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: outdated
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:47:06.541Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: outdated
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:50:09.118Z] Error validating getServiceStatus kubernetes output from provider local-kubernetes: key .forwardablePorts[0][name] with value "5432" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/
+
+Error Details:
+
+value:
+  forwardablePorts: []
+  state: outdated
+  detail:
+    remoteResources: []
+context: getServiceStatus kubernetes output from provider local-kubernetes
+errorDescription: "key \e[4m.forwardablePorts[0][name]\e[24m with value \"5432\" fails to match the required pattern: /^(?![0-9]+$)(?!.*-$)(?!-)[a-z0-9-]{1,63}$/"
+errorDetails: []
+
+
+[2021-01-25T21:54:55.029Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t ecom-backend:v-105f128a55 --build-arg GARDEN_MODULE_VERSION=v-105f128a55 --file /home/kriley/code/ecom/.garden/build/ecom-backend/Dockerfile /home/kriley/code/ecom/.garden/build/ecom-backend" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon   2.56kB
+Step 1/16 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/16 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/16 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/16 : COPY go.mod .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-backend
+
+
+[2021-01-25T21:56:28.369Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t postgres:v-863f67c3f3 --build-arg GARDEN_MODULE_VERSION=v-863f67c3f3 /home/kriley/code/ecom/.garden/build/ecom-postgres" failed with code 1:
+
+The command '/bin/sh -c go mod download' returned a non-zero code: 1
+
+Here's the full output:
+
+Sending build context to Docker daemon   7.68kB
+Step 1/15 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/15 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/15 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/15 : RUN go mod download
+ ---> Running in 4e623d8da60c
+go mod download: no modules specified (see 'go help mod download')
+The command '/bin/sh -c go mod download' returned a non-zero code: 1
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-postgres
+
+
+[2021-01-25T21:56:28.520Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t ecom-backend:v-15b42cc8b7 --build-arg GARDEN_MODULE_VERSION=v-15b42cc8b7 --file /home/kriley/code/ecom/.garden/build/ecom-backend/Dockerfile /home/kriley/code/ecom/.garden/build/ecom-backend" failed with code 1:
+
+The command '/bin/sh -c go mod download' returned a non-zero code: 1
+
+Here's the full output:
+
+Sending build context to Docker daemon  2.048kB
+Step 1/15 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/15 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/15 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/15 : RUN go mod download
+ ---> Running in ecdfcda61bf5
+go mod download: no modules specified (see 'go help mod download')
+The command '/bin/sh -c go mod download' returned a non-zero code: 1
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-backend
+
+
+[2021-01-25T21:56:42.570Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t ecom-backend:v-105f128a55 --build-arg GARDEN_MODULE_VERSION=v-105f128a55 --file /home/kriley/code/ecom/.garden/build/ecom-backend/Dockerfile /home/kriley/code/ecom/.garden/build/ecom-backend" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon   2.56kB
+Step 1/16 : FROM golang:1.15.2-alpine as build_base
+ ---> b3bc898ad092
+Step 2/16 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> adb2753c109e
+Step 3/16 : WORKDIR /go/src/app/
+ ---> Using cache
+ ---> eeab7eff4b02
+Step 4/16 : COPY go.mod .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-backend
+
+
+[2021-01-25T22:00:54.151Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t ecom-api:v-07a3277b70 --build-arg GARDEN_MODULE_VERSION=v-07a3277b70 --file /home/kriley/code/ecom/.garden/build/ecom-api/Dockerfile /home/kriley/code/ecom/.garden/build/ecom-api" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon   2.56kB
+Step 1/17 : FROM golang:1.14.2-alpine as build_base
+ ---> dda4232b2bd5
+Step 2/17 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> a092f81f67cb
+Step 3/17 : WORKDIR /go/src/app
+ ---> Using cache
+ ---> c0cd9fe7a660
+Step 4/17 : COPY go.mod .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-api
+
+
+[2021-01-25T22:04:37.475Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t ecom-api:v-47139a217a --build-arg GARDEN_MODULE_VERSION=v-47139a217a --file /home/kriley/code/ecom/.garden/build/ecom-api/Dockerfile /home/kriley/code/ecom/.garden/build/ecom-api" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon   2.56kB
+Step 1/17 : FROM golang:1.14.2-alpine as build_base
+ ---> dda4232b2bd5
+Step 2/17 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> a092f81f67cb
+Step 3/17 : WORKDIR /go/src/app
+ ---> Using cache
+ ---> c0cd9fe7a660
+Step 4/17 : COPY go.mod .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-api
+
+
+[2021-01-25T22:05:02.976Z] Failed resolving one or more modules:
+
+ecom-ui: Error validating Module 'ecom-ui' (ecom-ui): key "services" is not allowed at path [services]
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-25T22:05:37.584Z] Failed resolving one or more modules:
+
+ecom-backend: Error validating Module 'ecom-backend' (ecom-backend): key .services[0] must be of type object
+ecom-ui: Error validating Module 'ecom-ui' (ecom-ui): key .services[0] must be of type object
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-25T22:05:57.610Z] Failed resolving one or more modules:
+
+ecom-backend: Error validating Module 'ecom-backend' (ecom-backend): key .services[0] must be of type object
+ecom-ui: Error validating Module 'ecom-ui' (ecom-ui): key .services[0] must be of type object
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-25T22:06:32.845Z] Failed resolving one or more modules:
+
+ecom-backend: Error validating Module 'ecom-backend' (ecom-backend): key .services[0] must be of type object
+ecom-ui: Error validating Module 'ecom-ui' (ecom-ui): key .services[0] must be of type object
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-25T22:06:51.208Z] Failed resolving one or more modules:
+
+ecom-ui: Module ecom-ui neither specifies image nor provides Dockerfile
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-25T22:07:11.555Z] Failed resolving one or more modules:
+
+ecom-ui: Module ecom-ui neither specifies image nor provides Dockerfile
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-26T03:01:32.297Z] Command "minikube ip" failed with code 89:
+
+Here's the full output:
+
+* The control plane node must be running for this command
+  - To start a cluster, run: "minikube start"
+
+Error Details:
+
+shortMessage: 'Command failed with exit code 89: minikube ip'
+command: minikube ip
+exitCode: 89
+stdout: |-
+  * The control plane node must be running for this command
+    - To start a cluster, run: "minikube start"
+stderr: ''
+all: |-
+  * The control plane node must be running for this command
+    - To start a cluster, run: "minikube start"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-01-26T03:01:32.319Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-01-26T03:01:29.337Z
+    batchId: 9ebd2e58-59d6-4f2b-88f0-91d036deae0b
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /home/kriley/code/ecom
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-26T03:01:29.216Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-01-26T03:01:29.330Z
+    batchId: 32f622e9-81c9-4127-b0a0-16e048c51247
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /home/kriley/code/ecom
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-26T03:01:29.217Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-01-26T03:01:29.333Z
+    completedAt: 2021-01-26T03:01:32.250Z
+    batchId: 32f622e9-81c9-4127-b0a0-16e048c51247
+    version: 0.12.12
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-01-26T03:01:29.338Z
+    batchId: 932b4017-4ae8-4de2-b9d9-5289ae3e5b32
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /home/kriley/code/ecom
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-26T03:01:29.218Z
+messages: []
+
+
+[2021-01-26T03:03:48.865Z] Failed resolving one or more modules:
+
+ecom-ui: Invalid template string (${var.baseHostname}): Could not find key baseHostname under var. Available keys: baseHostName, postgres-database, postgres-password and postgres-username.
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-26T03:05:41.978Z] Failed resolving one or more modules:
+
+ecom-ui: Invalid template string (${baseHostname}): Could not find key baseHostname. Available keys: environment, git, inputs, local, modules, project, providers, runtime, secrets, var and variables.
+
+Error Details:
+
+errors: {}
+
+
+[2021-01-26T03:10:55.795Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t ecom-api:v-cfa4e26189 --build-arg GARDEN_MODULE_VERSION=v-cfa4e26189 --file /home/kriley/code/ecom/.garden/build/ecom-api/Dockerfile /home/kriley/code/ecom/.garden/build/ecom-api" failed with code 1:
+
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Here's the full output:
+
+Sending build context to Docker daemon   2.56kB
+Step 1/18 : FROM golang:1.14.2-alpine as build_base
+ ---> dda4232b2bd5
+Step 2/18 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> a092f81f67cb
+Step 3/18 : WORKDIR /go/src/app
+ ---> Using cache
+ ---> c0cd9fe7a660
+Step 4/18 : COPY go.mod .
+COPY failed: file not found in build context or excluded by .dockerignore: stat go.mod: file does not exist
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-api
+
+
+[2021-01-26T03:11:06.956Z] Error deploying ecom-backend: CrashLoopBackOff - back-off 10s restarting failed container=ecom-backend pod=ecom-backend-7c75b7fd8d-wltp7_ecom-default(299aa0d5-28f6-42d2-95a8-9b79dbbf304b)
+
+━━━ Events ━━━
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1
+Pod ecom-backend-7c75b7fd8d-wltp7: Scheduled - Successfully assigned ecom-default/ecom-backend-7c75b7fd8d-wltp7 to minikube
+Pod ecom-backend-7c75b7fd8d-wltp7: Pulled - Container image "ecom-backend:v-26327ddc3e" already present on machine
+Pod ecom-backend-7c75b7fd8d-wltp7: Created - Created container ecom-backend
+Pod ecom-backend-7c75b7fd8d-wltp7: Started - Started container ecom-backend
+Pod ecom-backend-7c75b7fd8d-wltp7: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend
+
+****** ecom-backend-7c75b7fd8d-wltp7 ******
+------ ecom-backend ------Go Backend Server
+
+
+Error Details:
+
+serviceName: ecom-backend
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 10s restarting failed container=ecom-backend
+    pod=ecom-backend-7c75b7fd8d-wltp7_ecom-default(299aa0d5-28f6-42d2-95a8-9b79dbbf304b)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-backend-7c75b7fd8d-wltp7 to minikube\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mPulled - Container image \"ecom-backend:v-26327ddc3e\" already present on machine\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mCreated - Created container ecom-backend\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mStarted - Started container ecom-backend\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-backend-7c75b7fd8d-wltp7 ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-backend ------\e[39mGo Backend Server\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-backend
+      namespace: ecom-default
+      uid: 6099f5ed-c7b7-4ff1-9e48-4f2afd3dd6a8
+      resourceVersion: '7798'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:57Z'
+      labels:
+        module: ecom-backend
+        service: ecom-backend
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: 2eb68d953e9c71de56130fa8244ab37248f341ad0d3061ae26c507986aa56ad8
+        garden.io/version: v-26327ddc3e
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"2eb68d953e9c71de56130fa8244ab37248f341ad0d3061ae26c507986aa56ad8","garden.io/version":"v-26327ddc3e"},"labels":{"module":"ecom-backend","service":"ecom-backend"},"name":"ecom-backend","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-backend","service":"ecom-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-26327ddc3e"},{"name":"GARDEN_MODULE_VERSION","value":"v-26327ddc3e"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-backend\",\"name\":\"ecom-backend\",\"type\":\"build\",\"version\":\"v-26327ddc3e\"}]"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-backend:v-26327ddc3e","imagePullPolicy":"IfNotPresent","name":"ecom-backend","resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-backend
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-backend
+            service: ecom-backend
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:12:56.319Z] Error deploying ecom-backend: BackOff - Back-off restarting failed container
+
+━━━ Events ━━━
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1
+Pod ecom-backend-7c75b7fd8d-wltp7: Scheduled - Successfully assigned ecom-default/ecom-backend-7c75b7fd8d-wltp7 to minikube
+Pod ecom-backend-7c75b7fd8d-wltp7: Pulled - Container image "ecom-backend:v-26327ddc3e" already present on machine
+Pod ecom-backend-7c75b7fd8d-wltp7: Created - Created container ecom-backend
+Pod ecom-backend-7c75b7fd8d-wltp7: Started - Started container ecom-backend
+Pod ecom-backend-7c75b7fd8d-wltp7: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend
+
+****** ecom-backend-7c75b7fd8d-wltp7 ******
+------ ecom-backend ------Go Backend Server
+
+
+Error Details:
+
+serviceName: ecom-backend
+status:
+  state: unhealthy
+  lastMessage: BackOff - Back-off restarting failed container
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-backend-7c75b7fd8d-wltp7 to minikube\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mPulled - Container image \"ecom-backend:v-26327ddc3e\" already present on machine\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mCreated - Created container ecom-backend\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mStarted - Started container ecom-backend\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-backend-7c75b7fd8d-wltp7 ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-backend ------\e[39mGo Backend Server\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-backend
+      namespace: ecom-default
+      uid: 6099f5ed-c7b7-4ff1-9e48-4f2afd3dd6a8
+      resourceVersion: '7798'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:57Z'
+      labels:
+        module: ecom-backend
+        service: ecom-backend
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: 2eb68d953e9c71de56130fa8244ab37248f341ad0d3061ae26c507986aa56ad8
+        garden.io/version: v-26327ddc3e
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"2eb68d953e9c71de56130fa8244ab37248f341ad0d3061ae26c507986aa56ad8","garden.io/version":"v-26327ddc3e"},"labels":{"module":"ecom-backend","service":"ecom-backend"},"name":"ecom-backend","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-backend","service":"ecom-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-26327ddc3e"},{"name":"GARDEN_MODULE_VERSION","value":"v-26327ddc3e"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-backend\",\"name\":\"ecom-backend\",\"type\":\"build\",\"version\":\"v-26327ddc3e\"}]"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-backend:v-26327ddc3e","imagePullPolicy":"IfNotPresent","name":"ecom-backend","resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-backend
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-backend
+            service: ecom-backend
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:12:56.785Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t ecom-api:v-581f44819b --build-arg GARDEN_MODULE_VERSION=v-581f44819b --file /home/kriley/code/ecom/.garden/build/ecom-api/Dockerfile /home/kriley/code/ecom/.garden/build/ecom-api" failed with code 1:
+
+The command '/bin/sh -c CGO_ENABLED=0 go test -v' returned a non-zero code: 1
+
+Here's the full output:
+
+Sending build context to Docker daemon   5.12kB
+Step 1/18 : FROM golang:1.14.2-alpine as build_base
+ ---> dda4232b2bd5
+Step 2/18 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> a092f81f67cb
+Step 3/18 : WORKDIR /go/src/app
+ ---> Using cache
+ ---> c0cd9fe7a660
+Step 4/18 : COPY go.mod .
+ ---> Using cache
+ ---> 56a2de98e276
+Step 5/18 : COPY go.sum .
+ ---> Using cache
+ ---> 696f801c32fe
+Step 6/18 : RUN go mod download
+ ---> Using cache
+ ---> 7576179b8f46
+Step 7/18 : COPY . .
+ ---> bc67d0df36b0
+Step 8/18 : RUN CGO_ENABLED=0 go test -v
+ ---> Running in 1d6b9ace1b2e
+can't load package: package .: no Go files in /go/src/app
+The command '/bin/sh -c CGO_ENABLED=0 go test -v' returned a non-zero code: 1
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-api
+
+
+[2021-01-26T03:17:26.790Z] Error deploying ecom-backend: CrashLoopBackOff - back-off 5m0s restarting failed container=ecom-backend pod=ecom-backend-7c75b7fd8d-wltp7_ecom-default(299aa0d5-28f6-42d2-95a8-9b79dbbf304b)
+
+━━━ Events ━━━
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1
+Pod ecom-backend-7c75b7fd8d-wltp7: Scheduled - Successfully assigned ecom-default/ecom-backend-7c75b7fd8d-wltp7 to minikube
+Pod ecom-backend-7c75b7fd8d-wltp7: Pulled - Container image "ecom-backend:v-26327ddc3e" already present on machine
+Pod ecom-backend-7c75b7fd8d-wltp7: Created - Created container ecom-backend
+Pod ecom-backend-7c75b7fd8d-wltp7: Started - Started container ecom-backend
+Pod ecom-backend-7c75b7fd8d-wltp7: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend
+
+****** ecom-backend-7c75b7fd8d-wltp7 ******
+------ ecom-backend ------Go Backend Server
+
+
+Error Details:
+
+serviceName: ecom-backend
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 5m0s restarting failed container=ecom-backend
+    pod=ecom-backend-7c75b7fd8d-wltp7_ecom-default(299aa0d5-28f6-42d2-95a8-9b79dbbf304b)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-backend-7c75b7fd8d-wltp7 to minikube\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mPulled - Container image \"ecom-backend:v-26327ddc3e\" already present on machine\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mCreated - Created container ecom-backend\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mStarted - Started container ecom-backend\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-backend-7c75b7fd8d-wltp7 ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-backend ------\e[39mGo Backend Server\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-backend
+      namespace: ecom-default
+      uid: 6099f5ed-c7b7-4ff1-9e48-4f2afd3dd6a8
+      resourceVersion: '7798'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:57Z'
+      labels:
+        module: ecom-backend
+        service: ecom-backend
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: 2eb68d953e9c71de56130fa8244ab37248f341ad0d3061ae26c507986aa56ad8
+        garden.io/version: v-26327ddc3e
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"2eb68d953e9c71de56130fa8244ab37248f341ad0d3061ae26c507986aa56ad8","garden.io/version":"v-26327ddc3e"},"labels":{"module":"ecom-backend","service":"ecom-backend"},"name":"ecom-backend","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-backend","service":"ecom-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-26327ddc3e"},{"name":"GARDEN_MODULE_VERSION","value":"v-26327ddc3e"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-backend\",\"name\":\"ecom-backend\",\"type\":\"build\",\"version\":\"v-26327ddc3e\"}]"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-backend:v-26327ddc3e","imagePullPolicy":"IfNotPresent","name":"ecom-backend","resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-backend
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-backend
+            service: ecom-backend
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:17:27.464Z] Unable to run docker command: Command "/home/kriley/.garden/tools/docker/ab8390b39f1acf83/docker/docker build -t ecom-api:v-9756d5d7ed --build-arg GARDEN_MODULE_VERSION=v-9756d5d7ed --file /home/kriley/code/ecom/.garden/build/ecom-api/Dockerfile /home/kriley/code/ecom/.garden/build/ecom-api" failed with code 1:
+
+The command '/bin/sh -c CGO_ENABLED=0 go test -v' returned a non-zero code: 1
+
+Here's the full output:
+
+Sending build context to Docker daemon   5.12kB
+Step 1/18 : FROM golang:1.14.2-alpine as build_base
+ ---> dda4232b2bd5
+Step 2/18 : RUN apk add --no-cache git build-base
+ ---> Using cache
+ ---> a092f81f67cb
+Step 3/18 : WORKDIR /go/src/app
+ ---> Using cache
+ ---> c0cd9fe7a660
+Step 4/18 : COPY go.mod .
+ ---> Using cache
+ ---> 56a2de98e276
+Step 5/18 : COPY go.sum .
+ ---> Using cache
+ ---> 696f801c32fe
+Step 6/18 : RUN go mod download
+ ---> Using cache
+ ---> 7576179b8f46
+Step 7/18 : COPY . .
+ ---> 9f7b6f81cd2a
+Step 8/18 : RUN CGO_ENABLED=0 go test -v
+ ---> Running in 1b7150368d07
+can't load package: package .: no Go files in /go/src/app
+The command '/bin/sh -c CGO_ENABLED=0 go test -v' returned a non-zero code: 1
+
+Error Details:
+
+
+args: []
+cwd: /home/kriley/code/ecom/.garden/build/ecom-api
+
+
+[2021-01-26T03:19:53.241Z] Error deploying ecom-backend: CrashLoopBackOff - back-off 5m0s restarting failed container=ecom-backend pod=ecom-backend-7c75b7fd8d-wltp7_ecom-default(299aa0d5-28f6-42d2-95a8-9b79dbbf304b)
+
+━━━ Events ━━━
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1
+Pod ecom-backend-7c75b7fd8d-wltp7: Scheduled - Successfully assigned ecom-default/ecom-backend-7c75b7fd8d-wltp7 to minikube
+Pod ecom-backend-7c75b7fd8d-wltp7: Pulled - Container image "ecom-backend:v-26327ddc3e" already present on machine
+Pod ecom-backend-7c75b7fd8d-wltp7: Created - Created container ecom-backend
+Pod ecom-backend-7c75b7fd8d-wltp7: Started - Started container ecom-backend
+Pod ecom-backend-7c75b7fd8d-wltp7: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend
+
+****** ecom-backend-7c75b7fd8d-wltp7 ******
+------ ecom-backend ------Go Backend Server
+
+
+Error Details:
+
+serviceName: ecom-backend
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 5m0s restarting failed container=ecom-backend
+    pod=ecom-backend-7c75b7fd8d-wltp7_ecom-default(299aa0d5-28f6-42d2-95a8-9b79dbbf304b)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-backend-7c75b7fd8d-wltp7 to minikube\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mPulled - Container image \"ecom-backend:v-26327ddc3e\" already present on machine\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mCreated - Created container ecom-backend\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[37mStarted - Started container ecom-backend\e[39m\n\e[94mPod ecom-backend-7c75b7fd8d-wltp7:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-backend-7c75b7fd8d-wltp7 ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-backend ------\e[39mGo Backend Server\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-backend
+      namespace: ecom-default
+      uid: 6099f5ed-c7b7-4ff1-9e48-4f2afd3dd6a8
+      resourceVersion: '7798'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:57Z'
+      labels:
+        module: ecom-backend
+        service: ecom-backend
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: 2eb68d953e9c71de56130fa8244ab37248f341ad0d3061ae26c507986aa56ad8
+        garden.io/version: v-26327ddc3e
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"2eb68d953e9c71de56130fa8244ab37248f341ad0d3061ae26c507986aa56ad8","garden.io/version":"v-26327ddc3e"},"labels":{"module":"ecom-backend","service":"ecom-backend"},"name":"ecom-backend","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-backend","service":"ecom-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-26327ddc3e"},{"name":"GARDEN_MODULE_VERSION","value":"v-26327ddc3e"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-backend\",\"name\":\"ecom-backend\",\"type\":\"build\",\"version\":\"v-26327ddc3e\"}]"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-backend:v-26327ddc3e","imagePullPolicy":"IfNotPresent","name":"ecom-backend","resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-backend
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-backend
+            service: ecom-backend
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:21:01.720Z] Error deploying db: ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out progressing.
+
+━━━ Events ━━━
+Deployment db: ScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1
+Pod db-84f8b4cdc5-cggc5: Scheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube
+Pod db-84f8b4cdc5-cggc5: Pulled - Container image "postgres:12-alpine" already present on machine
+Pod db-84f8b4cdc5-cggc5: Created - Created container db
+Pod db-84f8b4cdc5-cggc5: Started - Started container db
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  role "ecomuser" does not exist
+
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/db
+
+****** db-84f8b4cdc5-cggc5 ******
+------ db ------2021-01-26 03:20:32.307 UTC [332] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:33.382 UTC [340] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:34.294 UTC [347] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:35.323 UTC [354] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:36.303 UTC [361] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:37.652 UTC [368] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:38.386 UTC [375] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:39.310 UTC [383] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:40.311 UTC [391] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:41.342 UTC [398] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:42.330 UTC [405] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:43.312 UTC [412] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:44.298 UTC [419] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:45.317 UTC [427] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:46.326 UTC [434] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:47.326 UTC [441] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:48.301 UTC [449] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:49.311 UTC [456] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:50.336 UTC [463] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:51.344 UTC [471] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:52.323 UTC [478] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:53.312 UTC [487] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:54.387 UTC [494] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:55.311 UTC [501] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:56.369 UTC [509] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:57.346 UTC [516] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:58.323 UTC [523] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:20:59.329 UTC [530] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:21:00.310 UTC [537] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:21:01.303 UTC [545] FATAL:  role "ecomuser" does not exist
+
+
+Error Details:
+
+serviceName: db
+status:
+  state: unhealthy
+  lastMessage: >-
+    ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out
+    progressing.
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment db:\e[39m \e[37mScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mScheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mPulled - Container image \"postgres:12-alpine\" already present on machine\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mCreated - Created container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mStarted - Started container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory\e[39m\n\e[33m\tIs the server running locally and accepting\e[39m\n\e[33m\tconnections on Unix domain socket \"/var/run/postgresql/.s.PGSQL.5432\"?\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly\e[39m\n\e[33m\tThis probably means the server terminated abnormally\e[39m\n\e[33m\tbefore or while processing the request.\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  role \"ecomuser\" does not exist\e[39m\n\e[33m\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/db\e[39m\n\e[94m\e[39m\n\e[94m****** db-84f8b4cdc5-cggc5 ******\e[39m\n\e[94m\e[39m\e[90m------ db ------\e[39m2021-01-26 03:20:32.307 UTC [332] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:33.382 UTC [340] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:34.294 UTC [347] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:35.323 UTC [354] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:36.303 UTC [361] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:37.652 UTC [368] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:38.386 UTC [375] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:39.310 UTC [383] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:40.311 UTC [391] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:41.342 UTC [398] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:42.330 UTC [405] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:43.312 UTC [412] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:44.298 UTC [419] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:45.317 UTC [427] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:46.326 UTC [434] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:47.326 UTC [441] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:48.301 UTC [449] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:49.311 UTC [456] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:50.336 UTC [463] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:51.344 UTC [471] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:52.323 UTC [478] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:53.312 UTC [487] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:54.387 UTC [494] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:55.311 UTC [501] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:56.369 UTC [509] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:57.346 UTC [516] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:58.323 UTC [523] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:20:59.329 UTC [530] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:21:00.310 UTC [537] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:21:01.303 UTC [545] FATAL:  role \"ecomuser\" does not exist\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: db
+      namespace: ecom-default
+      uid: afa2efda-ffde-419a-9b15-3f26e90fa0fa
+      resourceVersion: '8394'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:55Z'
+      labels:
+        module: postgres
+        service: db
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03
+        garden.io/version: v-0acb088676
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03","garden.io/version":"v-0acb088676"},"labels":{"module":"postgres","service":"db"},"name":"db","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"db"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"postgres","service":"db"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-0acb088676"},{"name":"GARDEN_MODULE_VERSION","value":"v-0acb088676"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"postgres\",\"name\":\"postgres\",\"type\":\"build\",\"version\":\"v-0acb088676\"}]"},{"name":"POSTGRES_DATABASE","value":"ecom"},{"name":"POSTGRES_USERNAME","value":"ecomuser"},{"name":"POSTGRES_PASSWORD","value":"ecompass"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"postgres:12-alpine","imagePullPolicy":"IfNotPresent","livenessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":3,"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"db","ports":[{"containerPort":5432,"name":"db","protocol":"TCP"}],"readinessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":90,"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false},"volumeMounts":[{"mountPath":"/db-data","name":"data"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5,"volumes":[{"emptyDir":{},"name":"data"}]}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: db
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: postgres
+            service: db
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:21:13.840Z] Error deploying ecom-ui: CrashLoopBackOff - back-off 10s restarting failed container=ecom-ui pod=ecom-ui-5757c78768-58m94_ecom-default(7deb508f-10ee-43e3-b887-5505a1ed05a6)
+
+━━━ Events ━━━
+Deployment ecom-ui: ScalingReplicaSet - Scaled up replica set ecom-ui-5757c78768 to 1
+Pod ecom-ui-5757c78768-58m94: Scheduled - Successfully assigned ecom-default/ecom-ui-5757c78768-58m94 to minikube
+Pod ecom-ui-5757c78768-58m94: Pulled - Container image "ecom-ui:v-87e0b388bf" already present on machine
+Pod ecom-ui-5757c78768-58m94: Created - Created container ecom-ui
+Pod ecom-ui-5757c78768-58m94: Started - Started container ecom-ui
+Pod ecom-ui-5757c78768-58m94: Unhealthy - Readiness probe failed: Get "http://172.17.0.8:8080/": dial tcp 172.17.0.8:8080: connect: connection refused
+Pod ecom-ui-5757c78768-58m94: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-ui
+
+****** ecom-ui-5757c78768-58m94 ******
+------ ecom-ui ------npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2021-01-26T03_21_11_858Z-debug.log
+
+
+Error Details:
+
+serviceName: ecom-ui
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 10s restarting failed container=ecom-ui
+    pod=ecom-ui-5757c78768-58m94_ecom-default(7deb508f-10ee-43e3-b887-5505a1ed05a6)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-ui:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-ui-5757c78768 to 1\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-ui-5757c78768-58m94 to minikube\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[37mPulled - Container image \"ecom-ui:v-87e0b388bf\" already present on machine\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[37mCreated - Created container ecom-ui\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[37mStarted - Started container ecom-ui\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[33mUnhealthy - Readiness probe failed: Get \"http://172.17.0.8:8080/\": dial tcp 172.17.0.8:8080: connect: connection refused\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-ui\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-ui-5757c78768-58m94 ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-ui ------\e[39mnpm ERR! missing script: serve\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /root/.npm/_logs/2021-01-26T03_21_11_858Z-debug.log\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-ui
+      namespace: ecom-default
+      uid: 669b334d-e3b8-4ba9-9651-00f6dda9edb1
+      resourceVersion: '8431'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:21:04Z'
+      labels:
+        module: ecom-ui
+        service: ecom-ui
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: ae158332714d1ef89f1c03dbefa0a45d4ea62a0ed57d1f4a6f2d1a68132d568a
+        garden.io/version: v-87e0b388bf
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"ae158332714d1ef89f1c03dbefa0a45d4ea62a0ed57d1f4a6f2d1a68132d568a","garden.io/version":"v-87e0b388bf"},"labels":{"module":"ecom-ui","service":"ecom-ui"},"name":"ecom-ui","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-ui"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-ui","service":"ecom-ui"}},"spec":{"containers":[{"args":["npm","run","serve"],"env":[{"name":"GARDEN_VERSION","value":"v-87e0b388bf"},{"name":"GARDEN_MODULE_VERSION","value":"v-87e0b388bf"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-ui\",\"name\":\"ecom-ui\",\"type\":\"build\",\"version\":\"v-87e0b388bf\"},{\"moduleName\":\"ecom-api\",\"name\":\"ecom-api\",\"type\":\"service\",\"version\":\"v-0cf035c411\"}]"},{"name":"HOSTNAME","value":"ecom.local.app.garden"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-ui:v-87e0b388bf","imagePullPolicy":"IfNotPresent","livenessProbe":{"failureThreshold":3,"httpGet":{"path":"/","port":8080,"scheme":"HTTP"},"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"ecom-ui","ports":[{"containerPort":8080,"name":"http","protocol":"TCP"}],"readinessProbe":{"failureThreshold":90,"httpGet":{"path":"/","port":8080,"scheme":"HTTP"},"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-ui
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-ui
+            service: ecom-ui
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:24:00.224Z] Error deploying db: ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out progressing.
+
+━━━ Events ━━━
+Deployment db: ScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1
+Pod db-84f8b4cdc5-cggc5: Scheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube
+Pod db-84f8b4cdc5-cggc5: Pulled - Container image "postgres:12-alpine" already present on machine
+Pod db-84f8b4cdc5-cggc5: Created - Created container db
+Pod db-84f8b4cdc5-cggc5: Started - Started container db
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  role "ecomuser" does not exist
+
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/db
+
+****** db-84f8b4cdc5-cggc5 ******
+------ db ------2021-01-26 03:22:57.308 UTC [649] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:22:58.338 UTC [656] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:22:59.337 UTC [663] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:00.314 UTC [670] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:01.313 UTC [677] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:02.303 UTC [684] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:03.345 UTC [691] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:04.356 UTC [698] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:05.340 UTC [705] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:06.328 UTC [713] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:07.312 UTC [721] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:08.378 UTC [728] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:08.759 UTC [736] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:09.350 UTC [744] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:10.343 UTC [751] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:11.359 UTC [759] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:12.313 UTC [766] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:13.350 UTC [774] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:13.727 UTC [781] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:14.299 UTC [788] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:15.310 UTC [795] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:16.309 UTC [802] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:17.309 UTC [809] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:18.304 UTC [816] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:18.718 UTC [824] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:18.830 UTC [1] LOG:  received fast shutdown request
+2021-01-26 03:23:18.852 UTC [1] LOG:  aborting any active transactions
+2021-01-26 03:23:18.852 UTC [1] LOG:  background worker "logical replication launcher" (PID 59) exited with exit code 1
+2021-01-26 03:23:18.853 UTC [54] LOG:  shutting down
+2021-01-26 03:23:19.013 UTC [1] LOG:  database system is shut down
+
+
+Error Details:
+
+serviceName: db
+status:
+  state: unhealthy
+  lastMessage: >-
+    ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out
+    progressing.
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment db:\e[39m \e[37mScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mScheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mPulled - Container image \"postgres:12-alpine\" already present on machine\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mCreated - Created container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mStarted - Started container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory\e[39m\n\e[33m\tIs the server running locally and accepting\e[39m\n\e[33m\tconnections on Unix domain socket \"/var/run/postgresql/.s.PGSQL.5432\"?\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly\e[39m\n\e[33m\tThis probably means the server terminated abnormally\e[39m\n\e[33m\tbefore or while processing the request.\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  role \"ecomuser\" does not exist\e[39m\n\e[33m\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/db\e[39m\n\e[94m\e[39m\n\e[94m****** db-84f8b4cdc5-cggc5 ******\e[39m\n\e[94m\e[39m\e[90m------ db ------\e[39m2021-01-26 03:22:57.308 UTC [649] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:22:58.338 UTC [656] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:22:59.337 UTC [663] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:00.314 UTC [670] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:01.313 UTC [677] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:02.303 UTC [684] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:03.345 UTC [691] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:04.356 UTC [698] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:05.340 UTC [705] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:06.328 UTC [713] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:07.312 UTC [721] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:08.378 UTC [728] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:08.759 UTC [736] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:09.350 UTC [744] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:10.343 UTC [751] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:11.359 UTC [759] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:12.313 UTC [766] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:13.350 UTC [774] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:13.727 UTC [781] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:14.299 UTC [788] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:15.310 UTC [795] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:16.309 UTC [802] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:17.309 UTC [809] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:18.304 UTC [816] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:18.718 UTC [824] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:18.830 UTC [1] LOG:  received fast shutdown request\n2021-01-26 03:23:18.852 UTC [1] LOG:  aborting any active transactions\n2021-01-26 03:23:18.852 UTC [1] LOG:  background worker \"logical replication launcher\" (PID 59) exited with exit code 1\n2021-01-26 03:23:18.853 UTC [54] LOG:  shutting down\n2021-01-26 03:23:19.013 UTC [1] LOG:  database system is shut down\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: db
+      namespace: ecom-default
+      uid: afa2efda-ffde-419a-9b15-3f26e90fa0fa
+      resourceVersion: '8394'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:55Z'
+      labels:
+        module: postgres
+        service: db
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03
+        garden.io/version: v-0acb088676
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03","garden.io/version":"v-0acb088676"},"labels":{"module":"postgres","service":"db"},"name":"db","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"db"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"postgres","service":"db"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-0acb088676"},{"name":"GARDEN_MODULE_VERSION","value":"v-0acb088676"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"postgres\",\"name\":\"postgres\",\"type\":\"build\",\"version\":\"v-0acb088676\"}]"},{"name":"POSTGRES_DATABASE","value":"ecom"},{"name":"POSTGRES_USERNAME","value":"ecomuser"},{"name":"POSTGRES_PASSWORD","value":"ecompass"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"postgres:12-alpine","imagePullPolicy":"IfNotPresent","livenessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":3,"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"db","ports":[{"containerPort":5432,"name":"db","protocol":"TCP"}],"readinessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":90,"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false},"volumeMounts":[{"mountPath":"/db-data","name":"data"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5,"volumes":[{"emptyDir":{},"name":"data"}]}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: db
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: postgres
+            service: db
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:24:06.908Z] Error deploying ecom-backend: CrashLoopBackOff - back-off 10s restarting failed container=ecom-backend pod=ecom-backend-7d9fb5f45b-gj2sg_ecom-default(5852747d-d199-4fbc-9561-c28708f1371c)
+
+━━━ Events ━━━
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7d9fb5f45b to 1
+Deployment ecom-backend: ScalingReplicaSet - Scaled down replica set ecom-backend-7c75b7fd8d to 0
+Pod ecom-backend-7d9fb5f45b-gj2sg: Scheduled - Successfully assigned ecom-default/ecom-backend-7d9fb5f45b-gj2sg to minikube
+Pod ecom-backend-7d9fb5f45b-gj2sg: Pulled - Container image "ecom-backend:v-1d035bde45" already present on machine
+Pod ecom-backend-7d9fb5f45b-gj2sg: Created - Created container ecom-backend
+Pod ecom-backend-7d9fb5f45b-gj2sg: Started - Started container ecom-backend
+Pod ecom-backend-7d9fb5f45b-gj2sg: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend
+
+****** ecom-backend-7d9fb5f45b-gj2sg ******
+------ ecom-backend ------Go Backend Server
+
+
+Error Details:
+
+serviceName: ecom-backend
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 10s restarting failed container=ecom-backend
+    pod=ecom-backend-7d9fb5f45b-gj2sg_ecom-default(5852747d-d199-4fbc-9561-c28708f1371c)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7d9fb5f45b to 1\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled down replica set ecom-backend-7c75b7fd8d to 0\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-backend-7d9fb5f45b-gj2sg to minikube\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mPulled - Container image \"ecom-backend:v-1d035bde45\" already present on machine\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mCreated - Created container ecom-backend\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mStarted - Started container ecom-backend\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-backend-7d9fb5f45b-gj2sg ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-backend ------\e[39mGo Backend Server\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-backend
+      namespace: ecom-default
+      uid: 6099f5ed-c7b7-4ff1-9e48-4f2afd3dd6a8
+      resourceVersion: '8643'
+      generation: 2
+      creationTimestamp: '2021-01-26T03:10:57Z'
+      labels:
+        module: ecom-backend
+        service: ecom-backend
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: a97e26f029a06580560d0e9ac0baa713c3fe583d754dda4cd911cf4c00b6364e
+        garden.io/version: v-1d035bde45
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"a97e26f029a06580560d0e9ac0baa713c3fe583d754dda4cd911cf4c00b6364e","garden.io/version":"v-1d035bde45"},"labels":{"module":"ecom-backend","service":"ecom-backend"},"name":"ecom-backend","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-backend","service":"ecom-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-1d035bde45"},{"name":"GARDEN_MODULE_VERSION","value":"v-1d035bde45"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-backend\",\"name\":\"ecom-backend\",\"type\":\"build\",\"version\":\"v-1d035bde45\"}]"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-backend:v-1d035bde45","imagePullPolicy":"IfNotPresent","name":"ecom-backend","resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-backend
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-backend
+            service: ecom-backend
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:24:07.397Z] Error deploying ecom-ui: CrashLoopBackOff - back-off 1m20s restarting failed container=ecom-ui pod=ecom-ui-5757c78768-58m94_ecom-default(7deb508f-10ee-43e3-b887-5505a1ed05a6)
+
+━━━ Events ━━━
+Deployment ecom-ui: ScalingReplicaSet - Scaled up replica set ecom-ui-5757c78768 to 1
+Pod ecom-ui-5757c78768-58m94: Scheduled - Successfully assigned ecom-default/ecom-ui-5757c78768-58m94 to minikube
+Pod ecom-ui-5757c78768-58m94: Pulled - Container image "ecom-ui:v-87e0b388bf" already present on machine
+Pod ecom-ui-5757c78768-58m94: Created - Created container ecom-ui
+Pod ecom-ui-5757c78768-58m94: Started - Started container ecom-ui
+Pod ecom-ui-5757c78768-58m94: Unhealthy - Readiness probe failed: Get "http://172.17.0.8:8080/": dial tcp 172.17.0.8:8080: connect: connection refused
+Pod ecom-ui-5757c78768-58m94: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-ui
+
+****** ecom-ui-5757c78768-58m94 ******
+------ ecom-ui ------npm ERR! missing script: serve
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2021-01-26T03_22_42_169Z-debug.log
+
+
+Error Details:
+
+serviceName: ecom-ui
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 1m20s restarting failed container=ecom-ui
+    pod=ecom-ui-5757c78768-58m94_ecom-default(7deb508f-10ee-43e3-b887-5505a1ed05a6)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-ui:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-ui-5757c78768 to 1\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-ui-5757c78768-58m94 to minikube\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[37mPulled - Container image \"ecom-ui:v-87e0b388bf\" already present on machine\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[37mCreated - Created container ecom-ui\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[37mStarted - Started container ecom-ui\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[33mUnhealthy - Readiness probe failed: Get \"http://172.17.0.8:8080/\": dial tcp 172.17.0.8:8080: connect: connection refused\e[39m\n\e[94mPod ecom-ui-5757c78768-58m94:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-ui\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-ui-5757c78768-58m94 ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-ui ------\e[39mnpm ERR! missing script: serve\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /root/.npm/_logs/2021-01-26T03_22_42_169Z-debug.log\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-ui
+      namespace: ecom-default
+      uid: 669b334d-e3b8-4ba9-9651-00f6dda9edb1
+      resourceVersion: '8431'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:21:04Z'
+      labels:
+        module: ecom-ui
+        service: ecom-ui
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: ae158332714d1ef89f1c03dbefa0a45d4ea62a0ed57d1f4a6f2d1a68132d568a
+        garden.io/version: v-87e0b388bf
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"ae158332714d1ef89f1c03dbefa0a45d4ea62a0ed57d1f4a6f2d1a68132d568a","garden.io/version":"v-87e0b388bf"},"labels":{"module":"ecom-ui","service":"ecom-ui"},"name":"ecom-ui","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-ui"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-ui","service":"ecom-ui"}},"spec":{"containers":[{"args":["npm","run","serve"],"env":[{"name":"GARDEN_VERSION","value":"v-87e0b388bf"},{"name":"GARDEN_MODULE_VERSION","value":"v-87e0b388bf"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-ui\",\"name\":\"ecom-ui\",\"type\":\"build\",\"version\":\"v-87e0b388bf\"},{\"moduleName\":\"ecom-api\",\"name\":\"ecom-api\",\"type\":\"service\",\"version\":\"v-0cf035c411\"}]"},{"name":"HOSTNAME","value":"ecom.local.app.garden"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-ui:v-87e0b388bf","imagePullPolicy":"IfNotPresent","livenessProbe":{"failureThreshold":3,"httpGet":{"path":"/","port":8080,"scheme":"HTTP"},"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"ecom-ui","ports":[{"containerPort":8080,"name":"http","protocol":"TCP"}],"readinessProbe":{"failureThreshold":90,"httpGet":{"path":"/","port":8080,"scheme":"HTTP"},"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-ui
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-ui
+            service: ecom-ui
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:25:18.926Z] Error deploying db: ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out progressing.
+
+━━━ Events ━━━
+Deployment db: ScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1
+Pod db-84f8b4cdc5-cggc5: Scheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube
+Pod db-84f8b4cdc5-cggc5: Pulled - Container image "postgres:12-alpine" already present on machine
+Pod db-84f8b4cdc5-cggc5: Created - Created container db
+Pod db-84f8b4cdc5-cggc5: Started - Started container db
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  role "ecomuser" does not exist
+
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/db
+
+****** db-84f8b4cdc5-cggc5 ******
+------ db ------2021-01-26 03:22:57.308 UTC [649] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:22:58.338 UTC [656] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:22:59.337 UTC [663] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:00.314 UTC [670] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:01.313 UTC [677] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:02.303 UTC [684] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:03.345 UTC [691] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:04.356 UTC [698] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:05.340 UTC [705] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:06.328 UTC [713] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:07.312 UTC [721] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:08.378 UTC [728] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:08.759 UTC [736] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:09.350 UTC [744] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:10.343 UTC [751] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:11.359 UTC [759] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:12.313 UTC [766] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:13.350 UTC [774] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:13.727 UTC [781] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:14.299 UTC [788] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:15.310 UTC [795] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:16.309 UTC [802] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:17.309 UTC [809] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:18.304 UTC [816] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:18.718 UTC [824] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:23:18.830 UTC [1] LOG:  received fast shutdown request
+2021-01-26 03:23:18.852 UTC [1] LOG:  aborting any active transactions
+2021-01-26 03:23:18.852 UTC [1] LOG:  background worker "logical replication launcher" (PID 59) exited with exit code 1
+2021-01-26 03:23:18.853 UTC [54] LOG:  shutting down
+2021-01-26 03:23:19.013 UTC [1] LOG:  database system is shut down
+
+
+Error Details:
+
+serviceName: db
+status:
+  state: unhealthy
+  lastMessage: >-
+    ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out
+    progressing.
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment db:\e[39m \e[37mScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mScheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mPulled - Container image \"postgres:12-alpine\" already present on machine\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mCreated - Created container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mStarted - Started container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory\e[39m\n\e[33m\tIs the server running locally and accepting\e[39m\n\e[33m\tconnections on Unix domain socket \"/var/run/postgresql/.s.PGSQL.5432\"?\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly\e[39m\n\e[33m\tThis probably means the server terminated abnormally\e[39m\n\e[33m\tbefore or while processing the request.\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  role \"ecomuser\" does not exist\e[39m\n\e[33m\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/db\e[39m\n\e[94m\e[39m\n\e[94m****** db-84f8b4cdc5-cggc5 ******\e[39m\n\e[94m\e[39m\e[90m------ db ------\e[39m2021-01-26 03:22:57.308 UTC [649] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:22:58.338 UTC [656] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:22:59.337 UTC [663] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:00.314 UTC [670] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:01.313 UTC [677] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:02.303 UTC [684] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:03.345 UTC [691] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:04.356 UTC [698] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:05.340 UTC [705] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:06.328 UTC [713] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:07.312 UTC [721] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:08.378 UTC [728] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:08.759 UTC [736] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:09.350 UTC [744] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:10.343 UTC [751] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:11.359 UTC [759] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:12.313 UTC [766] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:13.350 UTC [774] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:13.727 UTC [781] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:14.299 UTC [788] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:15.310 UTC [795] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:16.309 UTC [802] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:17.309 UTC [809] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:18.304 UTC [816] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:18.718 UTC [824] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:23:18.830 UTC [1] LOG:  received fast shutdown request\n2021-01-26 03:23:18.852 UTC [1] LOG:  aborting any active transactions\n2021-01-26 03:23:18.852 UTC [1] LOG:  background worker \"logical replication launcher\" (PID 59) exited with exit code 1\n2021-01-26 03:23:18.853 UTC [54] LOG:  shutting down\n2021-01-26 03:23:19.013 UTC [1] LOG:  database system is shut down\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: db
+      namespace: ecom-default
+      uid: afa2efda-ffde-419a-9b15-3f26e90fa0fa
+      resourceVersion: '8394'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:55Z'
+      labels:
+        module: postgres
+        service: db
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03
+        garden.io/version: v-0acb088676
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03","garden.io/version":"v-0acb088676"},"labels":{"module":"postgres","service":"db"},"name":"db","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"db"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"postgres","service":"db"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-0acb088676"},{"name":"GARDEN_MODULE_VERSION","value":"v-0acb088676"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"postgres\",\"name\":\"postgres\",\"type\":\"build\",\"version\":\"v-0acb088676\"}]"},{"name":"POSTGRES_DATABASE","value":"ecom"},{"name":"POSTGRES_USERNAME","value":"ecomuser"},{"name":"POSTGRES_PASSWORD","value":"ecompass"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"postgres:12-alpine","imagePullPolicy":"IfNotPresent","livenessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":3,"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"db","ports":[{"containerPort":5432,"name":"db","protocol":"TCP"}],"readinessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":90,"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false},"volumeMounts":[{"mountPath":"/db-data","name":"data"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5,"volumes":[{"emptyDir":{},"name":"data"}]}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: db
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: postgres
+            service: db
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:25:20.251Z] Error deploying ecom-backend: CrashLoopBackOff - back-off 40s restarting failed container=ecom-backend pod=ecom-backend-7d9fb5f45b-gj2sg_ecom-default(5852747d-d199-4fbc-9561-c28708f1371c)
+
+━━━ Events ━━━
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7d9fb5f45b to 1
+Deployment ecom-backend: ScalingReplicaSet - Scaled down replica set ecom-backend-7c75b7fd8d to 0
+Pod ecom-backend-7d9fb5f45b-gj2sg: Scheduled - Successfully assigned ecom-default/ecom-backend-7d9fb5f45b-gj2sg to minikube
+Pod ecom-backend-7d9fb5f45b-gj2sg: Pulled - Container image "ecom-backend:v-1d035bde45" already present on machine
+Pod ecom-backend-7d9fb5f45b-gj2sg: Created - Created container ecom-backend
+Pod ecom-backend-7d9fb5f45b-gj2sg: Started - Started container ecom-backend
+Pod ecom-backend-7d9fb5f45b-gj2sg: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend
+
+****** ecom-backend-7d9fb5f45b-gj2sg ******
+------ ecom-backend ------Go Backend Server
+
+
+Error Details:
+
+serviceName: ecom-backend
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 40s restarting failed container=ecom-backend
+    pod=ecom-backend-7d9fb5f45b-gj2sg_ecom-default(5852747d-d199-4fbc-9561-c28708f1371c)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7d9fb5f45b to 1\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled down replica set ecom-backend-7c75b7fd8d to 0\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-backend-7d9fb5f45b-gj2sg to minikube\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mPulled - Container image \"ecom-backend:v-1d035bde45\" already present on machine\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mCreated - Created container ecom-backend\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mStarted - Started container ecom-backend\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-backend-7d9fb5f45b-gj2sg ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-backend ------\e[39mGo Backend Server\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-backend
+      namespace: ecom-default
+      uid: 6099f5ed-c7b7-4ff1-9e48-4f2afd3dd6a8
+      resourceVersion: '8643'
+      generation: 2
+      creationTimestamp: '2021-01-26T03:10:57Z'
+      labels:
+        module: ecom-backend
+        service: ecom-backend
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: a97e26f029a06580560d0e9ac0baa713c3fe583d754dda4cd911cf4c00b6364e
+        garden.io/version: v-1d035bde45
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"a97e26f029a06580560d0e9ac0baa713c3fe583d754dda4cd911cf4c00b6364e","garden.io/version":"v-1d035bde45"},"labels":{"module":"ecom-backend","service":"ecom-backend"},"name":"ecom-backend","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-backend","service":"ecom-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-1d035bde45"},{"name":"GARDEN_MODULE_VERSION","value":"v-1d035bde45"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-backend\",\"name\":\"ecom-backend\",\"type\":\"build\",\"version\":\"v-1d035bde45\"}]"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-backend:v-1d035bde45","imagePullPolicy":"IfNotPresent","name":"ecom-backend","resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-backend
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-backend
+            service: ecom-backend
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:25:56.911Z] Error deploying ecom-ui: BackOff - Back-off restarting failed container
+
+━━━ Events ━━━
+Deployment ecom-ui: ScalingReplicaSet - Scaled up replica set ecom-ui-5757c78768 to 1
+Deployment ecom-ui: ScalingReplicaSet - Scaled up replica set ecom-ui-64dd6b8cf to 1
+Deployment ecom-ui: ScalingReplicaSet - Scaled down replica set ecom-ui-5757c78768 to 0
+Pod ecom-ui-64dd6b8cf-v7hw9: Scheduled - Successfully assigned ecom-default/ecom-ui-64dd6b8cf-v7hw9 to minikube
+Pod ecom-ui-64dd6b8cf-v7hw9: Pulled - Container image "ecom-ui:v-a6f2d7aced" already present on machine
+Pod ecom-ui-64dd6b8cf-v7hw9: Created - Created container ecom-ui
+Pod ecom-ui-64dd6b8cf-v7hw9: Started - Started container ecom-ui
+Pod ecom-ui-64dd6b8cf-v7hw9: Unhealthy - Readiness probe failed: Get "http://172.17.0.6:8080/": dial tcp 172.17.0.6:8080: connect: connection refused
+Pod ecom-ui-64dd6b8cf-v7hw9: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-ui
+
+****** ecom-ui-64dd6b8cf-v7hw9 ******
+------ ecom-ui ------Lifecycle scripts included in ecom-ui:
+  start
+    react-scripts start
+  test
+    react-scripts test
+
+available via `npm run-script`:
+  build
+    react-scripts build
+  eject
+    react-scripts eject
+
+
+Error Details:
+
+serviceName: ecom-ui
+status:
+  state: unhealthy
+  lastMessage: BackOff - Back-off restarting failed container
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-ui:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-ui-5757c78768 to 1\e[39m\n\e[94mDeployment ecom-ui:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-ui-64dd6b8cf to 1\e[39m\n\e[94mDeployment ecom-ui:\e[39m \e[37mScalingReplicaSet - Scaled down replica set ecom-ui-5757c78768 to 0\e[39m\n\e[94mPod ecom-ui-64dd6b8cf-v7hw9:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-ui-64dd6b8cf-v7hw9 to minikube\e[39m\n\e[94mPod ecom-ui-64dd6b8cf-v7hw9:\e[39m \e[37mPulled - Container image \"ecom-ui:v-a6f2d7aced\" already present on machine\e[39m\n\e[94mPod ecom-ui-64dd6b8cf-v7hw9:\e[39m \e[37mCreated - Created container ecom-ui\e[39m\n\e[94mPod ecom-ui-64dd6b8cf-v7hw9:\e[39m \e[37mStarted - Started container ecom-ui\e[39m\n\e[94mPod ecom-ui-64dd6b8cf-v7hw9:\e[39m \e[33mUnhealthy - Readiness probe failed: Get \"http://172.17.0.6:8080/\": dial tcp 172.17.0.6:8080: connect: connection refused\e[39m\n\e[94mPod ecom-ui-64dd6b8cf-v7hw9:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-ui\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-ui-64dd6b8cf-v7hw9 ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-ui ------\e[39mLifecycle scripts included in ecom-ui:\n  start\n    react-scripts start\n  test\n    react-scripts test\n\navailable via `npm run-script`:\n  build\n    react-scripts build\n  eject\n    react-scripts eject\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-ui
+      namespace: ecom-default
+      uid: 669b334d-e3b8-4ba9-9651-00f6dda9edb1
+      resourceVersion: '8801'
+      generation: 2
+      creationTimestamp: '2021-01-26T03:21:04Z'
+      labels:
+        module: ecom-ui
+        service: ecom-ui
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: 79345e02098f49a6204815756025a0022a48f42ab49f68827b9db4a2b83cdecc
+        garden.io/version: v-a6f2d7aced
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"79345e02098f49a6204815756025a0022a48f42ab49f68827b9db4a2b83cdecc","garden.io/version":"v-a6f2d7aced"},"labels":{"module":"ecom-ui","service":"ecom-ui"},"name":"ecom-ui","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-ui"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-ui","service":"ecom-ui"}},"spec":{"containers":[{"args":["npm","run"],"env":[{"name":"GARDEN_VERSION","value":"v-a6f2d7aced"},{"name":"GARDEN_MODULE_VERSION","value":"v-a6f2d7aced"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-ui\",\"name\":\"ecom-ui\",\"type\":\"build\",\"version\":\"v-a6f2d7aced\"},{\"moduleName\":\"ecom-api\",\"name\":\"ecom-api\",\"type\":\"service\",\"version\":\"v-0cf035c411\"}]"},{"name":"HOSTNAME","value":"ecom.local.app.garden"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-ui:v-a6f2d7aced","imagePullPolicy":"IfNotPresent","livenessProbe":{"failureThreshold":3,"httpGet":{"path":"/","port":8080,"scheme":"HTTP"},"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"ecom-ui","ports":[{"containerPort":8080,"name":"http","protocol":"TCP"}],"readinessProbe":{"failureThreshold":90,"httpGet":{"path":"/","port":8080,"scheme":"HTTP"},"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-ui
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-ui
+            service: ecom-ui
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:27:48.974Z] Error deploying ecom-backend: CrashLoopBackOff - back-off 2m40s restarting failed container=ecom-backend pod=ecom-backend-7d9fb5f45b-gj2sg_ecom-default(5852747d-d199-4fbc-9561-c28708f1371c)
+
+━━━ Events ━━━
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1
+Deployment ecom-backend: ScalingReplicaSet - Scaled up replica set ecom-backend-7d9fb5f45b to 1
+Deployment ecom-backend: ScalingReplicaSet - Scaled down replica set ecom-backend-7c75b7fd8d to 0
+Pod ecom-backend-7d9fb5f45b-gj2sg: Scheduled - Successfully assigned ecom-default/ecom-backend-7d9fb5f45b-gj2sg to minikube
+Pod ecom-backend-7d9fb5f45b-gj2sg: Pulled - Container image "ecom-backend:v-1d035bde45" already present on machine
+Pod ecom-backend-7d9fb5f45b-gj2sg: Created - Created container ecom-backend
+Pod ecom-backend-7d9fb5f45b-gj2sg: Started - Started container ecom-backend
+Pod ecom-backend-7d9fb5f45b-gj2sg: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend
+
+****** ecom-backend-7d9fb5f45b-gj2sg ******
+------ ecom-backend ------Go Backend Server
+
+
+Error Details:
+
+serviceName: ecom-backend
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 2m40s restarting failed container=ecom-backend
+    pod=ecom-backend-7d9fb5f45b-gj2sg_ecom-default(5852747d-d199-4fbc-9561-c28708f1371c)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7c75b7fd8d to 1\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled up replica set ecom-backend-7d9fb5f45b to 1\e[39m\n\e[94mDeployment ecom-backend:\e[39m \e[37mScalingReplicaSet - Scaled down replica set ecom-backend-7c75b7fd8d to 0\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mScheduled - Successfully assigned ecom-default/ecom-backend-7d9fb5f45b-gj2sg to minikube\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mPulled - Container image \"ecom-backend:v-1d035bde45\" already present on machine\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mCreated - Created container ecom-backend\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[37mStarted - Started container ecom-backend\e[39m\n\e[94mPod ecom-backend-7d9fb5f45b-gj2sg:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/ecom-backend\e[39m\n\e[94m\e[39m\n\e[94m****** ecom-backend-7d9fb5f45b-gj2sg ******\e[39m\n\e[94m\e[39m\e[90m------ ecom-backend ------\e[39mGo Backend Server\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: ecom-backend
+      namespace: ecom-default
+      uid: 6099f5ed-c7b7-4ff1-9e48-4f2afd3dd6a8
+      resourceVersion: '8643'
+      generation: 2
+      creationTimestamp: '2021-01-26T03:10:57Z'
+      labels:
+        module: ecom-backend
+        service: ecom-backend
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: a97e26f029a06580560d0e9ac0baa713c3fe583d754dda4cd911cf4c00b6364e
+        garden.io/version: v-1d035bde45
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"a97e26f029a06580560d0e9ac0baa713c3fe583d754dda4cd911cf4c00b6364e","garden.io/version":"v-1d035bde45"},"labels":{"module":"ecom-backend","service":"ecom-backend"},"name":"ecom-backend","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"ecom-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"ecom-backend","service":"ecom-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-1d035bde45"},{"name":"GARDEN_MODULE_VERSION","value":"v-1d035bde45"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"ecom-backend\",\"name\":\"ecom-backend\",\"type\":\"build\",\"version\":\"v-1d035bde45\"}]"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"ecom-backend:v-1d035bde45","imagePullPolicy":"IfNotPresent","name":"ecom-backend","resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: ecom-backend
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: ecom-backend
+            service: ecom-backend
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:27:49.127Z] Error deploying db: ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out progressing.
+
+━━━ Events ━━━
+Deployment db: ScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1
+Pod db-84f8b4cdc5-cggc5: Scheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube
+Pod db-84f8b4cdc5-cggc5: Pulled - Container image "postgres:12-alpine" already present on machine
+Pod db-84f8b4cdc5-cggc5: Created - Created container db
+Pod db-84f8b4cdc5-cggc5: Started - Started container db
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  role "ecomuser" does not exist
+
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/db
+
+****** db-84f8b4cdc5-cggc5 ******
+------ db ------2021-01-26 03:27:22.302 UTC [655] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:23.297 UTC [662] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:24.299 UTC [669] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:25.320 UTC [677] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:26.388 UTC [685] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:27.346 UTC [693] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:28.345 UTC [701] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:29.317 UTC [708] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:30.307 UTC [716] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:31.320 UTC [723] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:32.301 UTC [730] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:33.299 UTC [737] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:33.744 UTC [744] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:34.300 UTC [752] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:35.303 UTC [759] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:36.311 UTC [766] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:37.301 UTC [774] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:38.298 UTC [781] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:38.730 UTC [789] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:39.312 UTC [797] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:40.308 UTC [804] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:41.314 UTC [811] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:42.332 UTC [819] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:43.311 UTC [826] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:43.721 UTC [834] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:27:43.774 UTC [1] LOG:  received fast shutdown request
+2021-01-26 03:27:43.797 UTC [1] LOG:  aborting any active transactions
+2021-01-26 03:27:43.798 UTC [1] LOG:  background worker "logical replication launcher" (PID 59) exited with exit code 1
+2021-01-26 03:27:43.798 UTC [54] LOG:  shutting down
+2021-01-26 03:27:43.947 UTC [1] LOG:  database system is shut down
+
+
+Error Details:
+
+serviceName: db
+status:
+  state: unhealthy
+  lastMessage: >-
+    ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out
+    progressing.
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment db:\e[39m \e[37mScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mScheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mPulled - Container image \"postgres:12-alpine\" already present on machine\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mCreated - Created container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mStarted - Started container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory\e[39m\n\e[33m\tIs the server running locally and accepting\e[39m\n\e[33m\tconnections on Unix domain socket \"/var/run/postgresql/.s.PGSQL.5432\"?\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly\e[39m\n\e[33m\tThis probably means the server terminated abnormally\e[39m\n\e[33m\tbefore or while processing the request.\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  role \"ecomuser\" does not exist\e[39m\n\e[33m\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/db\e[39m\n\e[94m\e[39m\n\e[94m****** db-84f8b4cdc5-cggc5 ******\e[39m\n\e[94m\e[39m\e[90m------ db ------\e[39m2021-01-26 03:27:22.302 UTC [655] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:23.297 UTC [662] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:24.299 UTC [669] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:25.320 UTC [677] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:26.388 UTC [685] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:27.346 UTC [693] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:28.345 UTC [701] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:29.317 UTC [708] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:30.307 UTC [716] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:31.320 UTC [723] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:32.301 UTC [730] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:33.299 UTC [737] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:33.744 UTC [744] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:34.300 UTC [752] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:35.303 UTC [759] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:36.311 UTC [766] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:37.301 UTC [774] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:38.298 UTC [781] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:38.730 UTC [789] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:39.312 UTC [797] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:40.308 UTC [804] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:41.314 UTC [811] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:42.332 UTC [819] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:43.311 UTC [826] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:43.721 UTC [834] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:27:43.774 UTC [1] LOG:  received fast shutdown request\n2021-01-26 03:27:43.797 UTC [1] LOG:  aborting any active transactions\n2021-01-26 03:27:43.798 UTC [1] LOG:  background worker \"logical replication launcher\" (PID 59) exited with exit code 1\n2021-01-26 03:27:43.798 UTC [54] LOG:  shutting down\n2021-01-26 03:27:43.947 UTC [1] LOG:  database system is shut down\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: db
+      namespace: ecom-default
+      uid: afa2efda-ffde-419a-9b15-3f26e90fa0fa
+      resourceVersion: '8394'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:55Z'
+      labels:
+        module: postgres
+        service: db
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03
+        garden.io/version: v-0acb088676
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03","garden.io/version":"v-0acb088676"},"labels":{"module":"postgres","service":"db"},"name":"db","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"db"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"postgres","service":"db"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-0acb088676"},{"name":"GARDEN_MODULE_VERSION","value":"v-0acb088676"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"postgres\",\"name\":\"postgres\",\"type\":\"build\",\"version\":\"v-0acb088676\"}]"},{"name":"POSTGRES_DATABASE","value":"ecom"},{"name":"POSTGRES_USERNAME","value":"ecomuser"},{"name":"POSTGRES_PASSWORD","value":"ecompass"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"postgres:12-alpine","imagePullPolicy":"IfNotPresent","livenessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":3,"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"db","ports":[{"containerPort":5432,"name":"db","protocol":"TCP"}],"readinessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":90,"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false},"volumeMounts":[{"mountPath":"/db-data","name":"data"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5,"volumes":[{"emptyDir":{},"name":"data"}]}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: db
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: postgres
+            service: db
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-01-26T03:31:34.295Z] Unknown dependencies detected.
+
+  Service 'ecom-backend' (in module 'ecom-backend'): Unknown service or task 'postgres' referenced in dependencies.
+
+
+Error Details:
+
+unknownDependencies: []
+availableModules: []
+availableServicesAndTasks: []
+
+
+[2021-01-26T03:32:56.409Z] Error deploying db: ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out progressing.
+
+━━━ Events ━━━
+Deployment db: ScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1
+Pod db-84f8b4cdc5-cggc5: Scheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube
+Pod db-84f8b4cdc5-cggc5: Pulled - Container image "postgres:12-alpine" already present on machine
+Pod db-84f8b4cdc5-cggc5: Created - Created container db
+Pod db-84f8b4cdc5-cggc5: Started - Started container db
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+Pod db-84f8b4cdc5-cggc5: Unhealthy - Readiness probe failed: psql: error: FATAL:  role "ecomuser" does not exist
+
+Pod db-84f8b4cdc5-cggc5: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n ecom-default --context=minikube logs deployment/db
+
+****** db-84f8b4cdc5-cggc5 ******
+------ db ------2021-01-26 03:32:48.985 UTC [35] LOG:  database system is ready to accept connections
+ done
+server started
+
+/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+
+waiting for server to shut down....2021-01-26 03:32:49.021 UTC [35] LOG:  received fast shutdown request
+2021-01-26 03:32:49.041 UTC [35] LOG:  aborting any active transactions
+2021-01-26 03:32:49.041 UTC [35] LOG:  background worker "logical replication launcher" (PID 42) exited with exit code 1
+2021-01-26 03:32:49.042 UTC [37] LOG:  shutting down
+2021-01-26 03:32:49.190 UTC [35] LOG:  database system is shut down
+ done
+server stopped
+
+PostgreSQL init process complete; ready for start up.
+
+2021-01-26 03:32:49.255 UTC [1] LOG:  starting PostgreSQL 12.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.2.1_pre1) 10.2.1 20201203, 64-bit
+2021-01-26 03:32:49.255 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-01-26 03:32:49.255 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2021-01-26 03:32:49.300 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2021-01-26 03:32:49.380 UTC [53] LOG:  database system was shut down at 2021-01-26 03:32:49 UTC
+2021-01-26 03:32:49.399 UTC [54] FATAL:  the database system is starting up
+2021-01-26 03:32:49.427 UTC [1] LOG:  database system is ready to accept connections
+2021-01-26 03:32:50.324 UTC [68] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:51.313 UTC [75] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:52.307 UTC [82] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:53.304 UTC [89] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:54.305 UTC [96] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:55.310 UTC [104] FATAL:  role "ecomuser" does not exist
+2021-01-26 03:32:56.306 UTC [111] FATAL:  role "ecomuser" does not exist
+
+
+Error Details:
+
+serviceName: db
+status:
+  state: unhealthy
+  lastMessage: >-
+    ProgressDeadlineExceeded - ReplicaSet "db-84f8b4cdc5" has timed out
+    progressing.
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment db:\e[39m \e[37mScalingReplicaSet - Scaled up replica set db-84f8b4cdc5 to 1\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mScheduled - Successfully assigned ecom-default/db-84f8b4cdc5-cggc5 to minikube\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mPulled - Container image \"postgres:12-alpine\" already present on machine\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mCreated - Created container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[37mStarted - Started container db\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: could not connect to server: No such file or directory\e[39m\n\e[33m\tIs the server running locally and accepting\e[39m\n\e[33m\tconnections on Unix domain socket \"/var/run/postgresql/.s.PGSQL.5432\"?\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  the database system is starting up\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: server closed the connection unexpectedly\e[39m\n\e[33m\tThis probably means the server terminated abnormally\e[39m\n\e[33m\tbefore or while processing the request.\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mUnhealthy - Readiness probe failed: psql: error: FATAL:  role \"ecomuser\" does not exist\e[39m\n\e[33m\e[39m\n\e[94mPod db-84f8b4cdc5-cggc5:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n ecom-default --context=minikube logs deployment/db\e[39m\n\e[94m\e[39m\n\e[94m****** db-84f8b4cdc5-cggc5 ******\e[39m\n\e[94m\e[39m\e[90m------ db ------\e[39m2021-01-26 03:32:48.985 UTC [35] LOG:  database system is ready to accept connections\n done\nserver started\n\n/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*\n\nwaiting for server to shut down....2021-01-26 03:32:49.021 UTC [35] LOG:  received fast shutdown request\n2021-01-26 03:32:49.041 UTC [35] LOG:  aborting any active transactions\n2021-01-26 03:32:49.041 UTC [35] LOG:  background worker \"logical replication launcher\" (PID 42) exited with exit code 1\n2021-01-26 03:32:49.042 UTC [37] LOG:  shutting down\n2021-01-26 03:32:49.190 UTC [35] LOG:  database system is shut down\n done\nserver stopped\n\nPostgreSQL init process complete; ready for start up.\n\n2021-01-26 03:32:49.255 UTC [1] LOG:  starting PostgreSQL 12.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.2.1_pre1) 10.2.1 20201203, 64-bit\n2021-01-26 03:32:49.255 UTC [1] LOG:  listening on IPv4 address \"0.0.0.0\", port 5432\n2021-01-26 03:32:49.255 UTC [1] LOG:  listening on IPv6 address \"::\", port 5432\n2021-01-26 03:32:49.300 UTC [1] LOG:  listening on Unix socket \"/var/run/postgresql/.s.PGSQL.5432\"\n2021-01-26 03:32:49.380 UTC [53] LOG:  database system was shut down at 2021-01-26 03:32:49 UTC\n2021-01-26 03:32:49.399 UTC [54] FATAL:  the database system is starting up\n2021-01-26 03:32:49.427 UTC [1] LOG:  database system is ready to accept connections\n2021-01-26 03:32:50.324 UTC [68] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:51.313 UTC [75] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:52.307 UTC [82] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:53.304 UTC [89] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:54.305 UTC [96] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:55.310 UTC [104] FATAL:  role \"ecomuser\" does not exist\n2021-01-26 03:32:56.306 UTC [111] FATAL:  role \"ecomuser\" does not exist\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: db
+      namespace: ecom-default
+      uid: afa2efda-ffde-419a-9b15-3f26e90fa0fa
+      resourceVersion: '8394'
+      generation: 1
+      creationTimestamp: '2021-01-26T03:10:55Z'
+      labels:
+        module: postgres
+        service: db
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/configured.replicas: '1'
+        garden.io/generated: 'true'
+        garden.io/manifest-hash: e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03
+        garden.io/version: v-0acb088676
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"e22314585a01f53729003b0490f5f8ebb049fe0fa7bb06f7328d021a6de6cb03","garden.io/version":"v-0acb088676"},"labels":{"module":"postgres","service":"db"},"name":"db","namespace":"ecom-default"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"db"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"module":"postgres","service":"db"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-0acb088676"},{"name":"GARDEN_MODULE_VERSION","value":"v-0acb088676"},{"name":"GARDEN_VARIABLES_POSTGRES_DATABASE","value":"ecom"},{"name":"GARDEN_VARIABLES_POSTGRES_USERNAME","value":"ecomuser"},{"name":"GARDEN_VARIABLES_POSTGRES_PASSWORD","value":"ecompass"},{"name":"GARDEN_VARIABLES_BASEHOSTNAME","value":"ecom.local.app.garden"},{"name":"GARDEN_DEPENDENCIES","value":"[{\"moduleName\":\"postgres\",\"name\":\"postgres\",\"type\":\"build\",\"version\":\"v-0acb088676\"}]"},{"name":"POSTGRES_DATABASE","value":"ecom"},{"name":"POSTGRES_USERNAME","value":"ecomuser"},{"name":"POSTGRES_PASSWORD","value":"ecompass"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"postgres:12-alpine","imagePullPolicy":"IfNotPresent","livenessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":3,"initialDelaySeconds":90,"periodSeconds":5,"successThreshold":1,"timeoutSeconds":3},"name":"db","ports":[{"containerPort":5432,"name":"db","protocol":"TCP"}],"readinessProbe":{"exec":{"command":["psql","-w","-U","ecomuser","-d","ecom","-c","SELECT
+          1"]},"failureThreshold":90,"initialDelaySeconds":2,"periodSeconds":1,"successThreshold":2,"timeoutSeconds":3},"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"64Mi"}},"securityContext":{"allowPrivilegeEscalation":false},"volumeMounts":[{"mountPath":"/db-data","name":"data"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5,"volumes":[{"emptyDir":{},"name":"data"}]}}}}
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          service: db
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            module: postgres
+            service: db
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 5
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+      revisionHistoryLimit: 3
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
