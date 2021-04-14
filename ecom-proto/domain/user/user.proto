@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "ecom-proto/domain/user";
+
+message User {
+    int64 id = 1;
+    string firstName = 2;
+    string lastName = 3;
+    string emailAddress = 4;
+    string dateOfBirth = 5;
+    string createdDate = 6;
+    string updatedDate = 7;
+}

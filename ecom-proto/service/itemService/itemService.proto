@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package itemService;
+
+option go_package = "ecom-proto/service/itemService";
+
+import "ecom-proto/domain/item/item.proto";
+
+service ItemService {
+    rpc addItem (item.Item) returns (AddItemResponse);
+    rpc getItem (item.Item) returns (GetItemResponse);
+    rpc updateItem (item.Item) returns (UpdateItemResponse);
+    rpc deleteItem (item.Item) returns (DeleteItemResponse);
+}
+
+message AddItemResponse {
+    item.Item addedItem = 1;
+    Error error = 2;
+}
+
+message GetItemResponse {
+    item.Item retrievedItem = 1;
+    Error error = 2;
+}
+
+message UpdateItemResponse {
+    item.Item updatedItem = 1;
+    Error error = 2;
+}
+
+message DeleteItemResponse {
+    item.Item deletedItem = 1;
+    Error error = 2;
+}
+
+message Error {
+    string code = 1;
+    string message = 2;
+}

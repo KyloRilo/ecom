@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package item;
+
+option go_package = "ecom-proto/domain/item";
+
+message Item {
+    int64 id = 1;
+    string name = 2;
+    string description = 3;
+    float price = 4;
+    int64 userId = 5;
+    bool sold = 6;
+    string soldDate = 7;
+    string createdDate = 8;
+    string updatedDate = 9;
+}

@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package userService;
+
+option go_package = "ecom-proto/service/userService";
+
+import "ecom-proto/domain/user/user.proto";
+
+service UserService {
+    rpc addUser (user.User) returns (AddUserResponse);
+    rpc getUser (user.User) returns (GetUserResponse);
+    rpc updateUser (user.User) returns (UpdateUserResponse);
+    rpc deleteUser (user.User) returns (DeleteUserResponse);
+}
+
+message AddUserResponse {
+    user.User addedUser = 1;
+    Error error = 2;
+}
+
+message GetUserResponse {
+    user.User retrievedUser = 1;
+    Error error = 2;
+}
+
+message UpdateUserResponse {
+    user.User updatedUser = 1;
+    Error error = 2;
+}
+
+message DeleteUserResponse {
+    user.User deletedUser = 1;
+    Error error = 2;
+}
+
+message Error {
+    string code = 1;
+    string message = 2;
+}
