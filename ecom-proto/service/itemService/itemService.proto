@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package itemService;
 
-option go_package = "ecom-proto/service/itemService";
+option go_package = "github.com/GMRiley/ecom/ecom-proto/service/itemService";
 
-import "ecom-proto/domain/item/item.proto";
+import "github.com/GMRiley/ecom/ecom-proto/domain/item/item.proto";
 
 service ItemService {
     rpc addItem (item.Item) returns (AddItemResponse);

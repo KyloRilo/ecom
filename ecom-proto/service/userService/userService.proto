@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package userService;
 
-option go_package = "ecom-proto/service/userService";
+option go_package = "github.com/GMRiley/ecom/ecom-proto/service/userService";
 
-import "ecom-proto/domain/user/user.proto";
+import "github.com/GMRiley/ecom/ecom-proto/domain/user/user.proto";
 
 service UserService {
     rpc addUser (user.User) returns (AddUserResponse);

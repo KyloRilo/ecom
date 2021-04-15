@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package item;
 
-option go_package = "ecom-proto/domain/item";
+option go_package = "github.com/GMRiley/ecom/ecom-proto/domain/item";
 
 message Item {
     int64 id = 1;
