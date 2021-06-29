@@ -1,0 +1,35 @@
+version = 1
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_root = "github.com/GMRiley/ecom"
+
+[[analyzers]]
+name = "docker"
+enabled = true
+
+[[analyzers]]
+name = "terraform"
+enabled = true
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["react"]
+
+[[analyzers]]
+name = "sql"
+enabled = true
+
+[[transformers]]
+name = "standardjs"
+enabled = true
+
+[[transformers]]
+name = "gofmt"
+enabled = true
