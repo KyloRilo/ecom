@@ -1,18 +1,15 @@
 version = 1
 
 [[analyzers]]
-name = "go"
+name = "terraform"
 enabled = true
 
-  [analyzers.meta]
-  import_root = "github.com/GMRiley/ecom"
+[[analyzers]]
+name = "sql"
+enabled = true
 
 [[analyzers]]
 name = "docker"
-enabled = true
-
-[[analyzers]]
-name = "terraform"
 enabled = true
 
 [[analyzers]]
@@ -23,13 +20,16 @@ enabled = true
   plugins = ["react"]
 
 [[analyzers]]
-name = "sql"
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_root = "github.com/GMRiley/ecom"
+
+[[transformers]]
+name = "gofmt"
 enabled = true
 
 [[transformers]]
 name = "standardjs"
-enabled = true
-
-[[transformers]]
-name = "gofmt"
 enabled = true
