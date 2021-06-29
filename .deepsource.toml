@@ -18,13 +18,18 @@ enabled = true
 
   [analyzers.meta]
   plugins = ["react"]
+  import_root = "github.com/GMRiley/ecom/ecom-ui"
 
 [[analyzers]]
 name = "go"
 enabled = true
 
   [analyzers.meta]
-  import_root = "github.com/GMRiley/ecom"
+  import_paths = [
+    "github.com/GMRiley/ecom/ecom-api",
+    "github.com/GMRiley/ecom/ecom-backend",
+    "github.com/GMRiley/ecom/ecom-proto"
+   ]
 
 [[transformers]]
 name = "gofmt"
