@@ -25,6 +25,7 @@ name = "go"
 enabled = true
 
   [analyzers.meta]
+  import_root = "github.com/GMRiley/ecom"
   import_paths = [
     "github.com/GMRiley/ecom/ecom-api",
     "github.com/GMRiley/ecom/ecom-backend",
