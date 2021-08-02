@@ -21,6 +21,7 @@ jobs:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
       - name: Terraform Format
+        uses: hashicorp/setup-terraform@v1
         id: fmt
         working-directory: ./terraform
         run: terraform fmt -check
