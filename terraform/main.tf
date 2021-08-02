@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
     }
   }
   required_version = ">= 0.14"
@@ -20,5 +20,5 @@ provider "aws" {
 }
 
 data "aws_availability_zones" "azs" {
-    state = "available"
+  state = "available"
 }
