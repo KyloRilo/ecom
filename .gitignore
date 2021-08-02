@@ -1,3 +1,5 @@
 error.log
-.garden/
+*.garden
 package-lock.json
+*.terraform
+*.terraform.lock.hcl

@@ -19,20 +19,20 @@ RUN apt-get update && /bin/bash /tmp/library-scripts/common-debian.sh "${INSTALL
     && chown ${USERNAME} /home/${USERNAME}/.minikube \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts/
 
-RUN apt install git rsync
+# RUN apt install git rsync
 
+# Install Node
 FROM ecom-k8s AS ecom-node
 
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - \ 
     && apt-get install -y nodejs
 
+# Install Garden and build env
 FROM ecom-node AS ecom-garden
 
-RUN mkdir -p /home/${USERNAME}/.garden/bin \
-    && curl -LJO https://github.com/garden-io/garden/releases/download/0.12.23/garden-0.12.23-linux-amd64.tar.gz \ 
-    && tar -zxvf garden-0.12.23-linux-amd64.tar.gz --directory /home/${USERNAME}/.garden/bin \
-    && chown ${USERNAME} /home/${USERNAME}/.garden/bin/linux-amd64 \
-    && echo "export PATH=$PATH:/home/${USERNAME}/.garden/bin/linux-amd64" >> /home/${USERNAME}/.bashrc
+RUN curl -sL https://get.garden.io/install.sh | bash \
+    && chown ${USERNAME} /root/.garden/bin \
+    && echo "export PATH=$PATH:/root/.garden/bin" >> /home/${USERNAME}/.bashrc \
 
 VOLUME [ "/var/lib/docker" ]
 
